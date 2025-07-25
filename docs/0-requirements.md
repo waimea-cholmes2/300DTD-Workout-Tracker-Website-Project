@@ -2,12 +2,12 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+My Brother Tracks his workouts through an old notebook he keeps in his drawer. he no longer wants to use the note book and rather track it on hs phone.
 
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+My project will have a variety of end users, so they will all have a variety of tech know-how, meaning some may not be confident on technology, so my website must be easy to understand and have a clear path to each feature.
 
 
 ## Proposed Solution
