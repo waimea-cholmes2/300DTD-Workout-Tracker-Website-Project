@@ -12,7 +12,7 @@ My project will have a variety of end users, so they will all have a variety of 
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+My solution to this problem will be to create a website avaliable to use on the end-users phone which will track all of their progress separately while they can all use the same exercises.
 
 
 ---
