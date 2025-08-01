@@ -20,6 +20,7 @@ My Project is a Workout Trcaker, that will track weight, sets and reps
 ## Project Links
 
 - [GitHub repo for the project](https://github.com/waimea-cholmes2/300DTD-Workout-Tracker-Website-Project)
+- [Project Documentation](https://waimea-cholmes2.github.io/300DTD-Workout-Tracker-Website-Project/)
 - [Live web app](https://...)
 
 
