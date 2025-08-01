@@ -63,11 +63,11 @@ This Figma demo shows the initial layout design for the UI:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I moved through the design with my end-user seeing if it all flowed well
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+My end-user said they wanted to have their favourite exercises have some kind of logo as well as the exercises that they had created.
 
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
