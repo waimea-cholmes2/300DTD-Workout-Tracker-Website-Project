@@ -59,6 +59,7 @@ The next stage of prototyping was to develop the layout for each screen of the U
 
 This Figma demo shows the initial layout design for the UI:
 
+
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/5ahZ8lLNkOJlpjBCUqFbMm/Workout-Tracker-High-Quality?node-id=9-141&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
 ### Testing
@@ -67,9 +68,9 @@ I moved through the design with my end-user seeing if it all flowed well
 
 ### Changes / Improvements
 
-My end-user said they wanted to have their favourite exercises have some kind of logo as well as the exercises that they had created.
+My end-user said they wanted to have their favourite exercises have some kind of logo as well as the exercises that they had created, rather than them just being first in  line, so they could know which was their favourite and which was their own. Also asked for a home button rather than a back button in the exercise page
 
-*FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/IOc5YFlnVoweJK8fccW23R/Workout-Tracker-High-Quality--2-?node-id=2-67&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
 
 ---
