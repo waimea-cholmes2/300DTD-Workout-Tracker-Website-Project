@@ -68,9 +68,14 @@ I moved through the design with my end-user seeing if it all flowed well
 
 ### Changes / Improvements
 
-My end-user said they wanted to have their favourite exercises have some kind of logo as well as the exercises that they had created, rather than them just being first in  line, so they could know which was their favourite and which was their own. Also asked for a home button rather than a back button in the exercise page
+My end-user said " yeah it looks fine but i reckon you need a way to tell which is a favourite instead of ot being on top, like put a header or something, and also I'd need a way to see which exercises are mine, also would definitelyt need a logout button, and a way to delete the exercises I own. Also change the back button to like a home symbol in the top or something. And also maybe centre the Name in the header, and add a logout button, wanna be able to log out."
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/IOc5YFlnVoweJK8fccW23R/Workout-Tracker-High-Quality--2-?node-id=2-67&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+- List of Favourites, Owned and Other exercises, with a small symbol and key showiing which favourites are owned
+- Added delete button for exercises which are owned by the user.
+- A new home symbol in the top replaces the back button in certain pages, also include the home button in the forms 
+- Centred the text in the header and added a logout buttin, as well as a login button in the header on the landing page.
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/qfNz3wUZ3utSq7v1vSiOK5/Workout-Tracker-High-Quality--3-?node-id=2-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
 
 ---
