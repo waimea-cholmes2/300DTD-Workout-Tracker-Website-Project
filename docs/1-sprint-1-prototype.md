@@ -12,18 +12,43 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 ## Initial Database Design
 
-Replace this text with notes regarding the DB design.
+- Users Table Holds the info about each user, it links to the workout table to show who owns each workout, and it links to the favourites table to allow the users to favourite exercises.
 
-![SCREENSHOT OF DB DESIGN](screenshots/example.png)
+- Favourites Table links to users and exercises allowing users to favourite exercises
+
+- Workout Table holds each users workout info, links to users and exercises, to show what exercise the user did in their workout
+
+- Exercise Table holds each exercises information, which all users can see and complete a workout with, this table links to the workout table, and the favourites table, for each user to have favourites.
+
+
+![SCREENSHOT OF DB DESIGN](screenshots/DB(1).png)
 
 
 ### Required Data Input
 
 Replace this text with a description of what data will be input, and where / how it will be obtained.
+- The First data that will be input by the user will be them signing in or registering through the sign in and register form page
+
+- The user can input a workout of an exercise of their choice, they will input the reps, sets an weight they did for the workout in the add progress form, they can also delete any progress they want in the exercises page
+
+- The user will be able to add and delete exercise, using a the exercise adding form, and a button found on the exercises page for deleting, but only owned exercises can be deleted.
+
+- The user will be able to favourite exercises, by clicking a button inside the exercises page
 
 ### Required Data Output
 
 Replace this text with a description of the outputs for the system - what types of data will be displayed?
+- When the user signs in a small piece of text will be displayed on th ehome screen, welcoming the user using their name
+
+- When a user adds their progress to an exercise a small piece of text on the screen will diplaying saying their progress has been added,  this will also update the table or graph shwoing the users progress, when delting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.
+
+- When the user adds an exercise a small piece of text will show up saying it was successful, when delting an exercise the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the exercise will be gone
+
+- When an exercise os favourited, the exercise will be moved up wit the other favouited exercises on the home page, and inside the exercises page their will be some symbol/button to show that it is favouited.
+
+
+
+
 
 ### Required Data Processing
 
@@ -64,11 +89,13 @@ This Figma demo shows the initial layout design for the UI:
 
 ### Testing
 
-I moved through the design with my end-user seeing if it all flowed well
+I moved through the design with my end user seeing if it all flowed well
+
+My end user said " yeah it looks fine but i reckon you need a way to tell which is a favourite instead of ot being on top, like put a header or something, and also I'd need a way to see which exercises are mine, also would definitelyt need a logout button, and a way to delete the exercises I own. Also change the back button to like a home symbol in the top or something. And also maybe centre the Name in the header"
 
 ### Changes / Improvements
 
-My end-user said " yeah it looks fine but i reckon you need a way to tell which is a favourite instead of ot being on top, like put a header or something, and also I'd need a way to see which exercises are mine, also would definitelyt need a logout button, and a way to delete the exercises I own. Also change the back button to like a home symbol in the top or something. And also maybe centre the Name in the header, and add a logout button, wanna be able to log out."
+
 
 - List of Favourites, Owned and Other exercises, with a small symbol and key showiing which favourites are owned
 - Added delete button for exercises which are owned by the user.
@@ -93,13 +120,18 @@ This Figma demo shows the UI with refinements applied:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I took my end user through the UI, using all of the features so they could have an understanding of it and see if it flows well.
+My end user said "Yeah it looks pretty good and flows well, but the colour is nor very good, I feel like it should have darker and more aggresive colours, like black and red, you also need to add a way to favourite it in the page"
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+- Changed to more aggresive colours, using a general base of black and red, with buttons being orange
 
-*FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+- Added a star symbol in the exercises page, where if can click it to favourite the exercise, filling in the star.
+
+
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/dDIBsYsHW19oKQQkdwt5LJ/Workout-Tracker-Refined--2-?node-id=5-95&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
 
 ---
