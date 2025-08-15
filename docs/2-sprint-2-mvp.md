@@ -10,9 +10,15 @@ Develop a bare-bones, working web application that provides the key functionalit
 
 ## Implemented Database Schema
 
-Replace this text with notes regarding the DB schema.
+- Users Table Holds the info about each user, it links to the workout table to show who owns each workout, and it links to the favourites table to allow the users to favourite exercises.
 
-![SCREENSHOT OF DB SCHEMA](screenshots/example.png)
+- Favourites Table links to users and exercises allowing users to favourite exercises
+
+- Workout Table holds each users workout info, links to users and exercises, to show what exercise the user did in their workout
+
+- Exercise Table holds each exercises information, which all users can see and complete a workout with, this table links to the workout table, and the favourites table, for each user to have favourites.
+
+![SCREENSHOT OF DB SCHEMA](screenshots/DB(1).png)
 
 
 ---

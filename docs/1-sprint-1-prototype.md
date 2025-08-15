@@ -121,13 +121,13 @@ This Figma demo shows the UI with refinements applied:
 ### Testing
 
 I took my end user through the UI, using all of the features so they could have an understanding of it and see if it flows well.
-My end user said "Yeah it looks pretty good and flows well, but the colour is nor very good, I feel like it should have darker and more aggresive colours, like black and red, you also need to add a way to favourite it in the page"
+My end user said "Yeah it looks pretty good and flows well, but the colour is not very good, I feel like it should have darker and more aggresive colours, like black and red, you also need to add a way to favourite it in the page"
 
 ### Changes / Improvements
 
 - Changed to more aggresive colours, using a general base of black and red, with buttons being orange
 
-- Added a star symbol in the exercises page, where if can click it to favourite the exercise, filling in the star.
+- Added a star symbol in the exercises page, where it can be clicked to favourite the exercise, filling in the star
 
 
 
