@@ -63,17 +63,20 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 
 This Figma demo shows the initial design for the UI 'flow':
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/wWu3U0kbDr9z01quCmicou/Workout-Tracker-App?node-id=2-37&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I took my user through the UI and explained how it will work and where evrytimg will be
+They said "Yeah thats perfect, just add like a login and register page well"
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+- Added Login Page
 
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+- Added Register Page
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/TlIZvG8s3XhFWL2VT6ufYy/Workout-Tracker-App-2-?node-id=2-22&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
 
 
 ---
@@ -112,9 +115,6 @@ My end user said " yeah it looks fine but i reckon you need a way to tell which 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
 This Figma demo shows the UI with refinements applied:
-
-- Added Colour
-- Added a footer to all pages
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/LqL4PXdQsnHulH70Sk5G3n/Workout-Tracker-Refined?node-id=2-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
