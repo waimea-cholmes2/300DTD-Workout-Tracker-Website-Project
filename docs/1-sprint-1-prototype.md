@@ -138,5 +138,14 @@ My end user said "Yeah it looks pretty good and flows well, but the colour is no
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+This Sprint has helped heavily to move the project forward, as it has lead me to the final design of the website, after getting feedback from my End-User.
+
+Key success points:
+- A final prototype has been made with a full UI and Flow, it runs exactly hoe the website is intended to.
+- The final prototype incorporates lots of feedback from the End-User, with many improvements being made from their requests.
+
+Challenges:
+- I struggled with coming up for a general colour scheme for the website, until the End-User helped
+
+Overall sprint1 has helped create a strong prototype to take into sprint 2, with valuable User feedback and testing.
 
