@@ -17,7 +17,34 @@
 
 {% block content %}
 
-    {% if user.session_id %}
+    {% if session.user_id %}
+
+      <article>
+
+        <ul>
+        
+        <h1>Exercises</h1>
+
+            {% for exercise in exercises %}
+
+                <li>
+
+                    <p class="exercises">
+
+                        <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a>
+                        
+                    </p>
+                    
+                </li>
+
+            {% else %}
+
+                <p>None!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
 
     {% else %}
 

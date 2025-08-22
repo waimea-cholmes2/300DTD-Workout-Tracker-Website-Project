@@ -50,6 +50,38 @@ def index():
         exercises = result.rows
     return render_template("pages/home.jinja", exercises = exercises)
 
+#-----------------------------------------------------------
+# Exercise page route
+#-----------------------------------------------------------
+@app.get("/exercise/<int:id>")
+def exercise():
+    with connect_db() as client:
+        # Get the thing details from the DB, including the owner info
+        sql = """
+            SELECT exercises.id,
+                   exercises.name,
+                   exercises.description/instructions,
+                   exercises.user_id,
+                   users.name AS owner
+
+            FROM exercises
+            JOIN users ON exercises.user_id = users.id
+
+            WHERE exercises.id=?
+        """
+        params = [id]
+        result = client.execute(sql, params)
+
+        # Did we get a result?
+        if result.rows:
+            # yes, so show it on the page
+            thing = result.rows[0]
+            return render_template("pages/thing.jinja", thing=thing)
+
+        else:
+            # No, so show error
+            return not_found_error()
+
 
 #-----------------------------------------------------------
 # About page route

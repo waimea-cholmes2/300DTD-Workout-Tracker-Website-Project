@@ -1,0 +1,46 @@
+{#=====================================================
+  Thing page
+  - Shows details of a single thing
+  - Has a delete link to remove it
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    {{exercise.name}}
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>Graph will go here</h1>
+
+
+    <article>
+
+        <header>
+            <h3></h3>
+        </header>
+
+        <p>Description: {{exercise.description/instructions}}</p>
+
+    </article>
+    
+    {# Only show delete link if logged in AND owner #}
+            {% if session.user_id and (exercise.user_id == session.user_id) %}
+
+                <a href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete</a>
+
+            {% else %}
+
+                Owner: <strong>{{ exercise.owner }}</strong>
+
+            {% endif %}
+
+    <a role="button" href="/Add-Workout">Add Workout</a>
+
+{% endblock %}
+
