@@ -54,13 +54,13 @@ def index():
 # Exercise page route
 #-----------------------------------------------------------
 @app.get("/exercise/<int:id>")
-def exercise():
+def exercise(id):
     with connect_db() as client:
         # Get the thing details from the DB, including the owner info
         sql = """
             SELECT exercises.id,
                    exercises.name,
-                   exercises.description/instructions,
+                   exercises.description-instructions,
                    exercises.user_id,
                    users.name AS owner
 

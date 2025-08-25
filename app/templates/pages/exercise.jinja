@@ -22,17 +22,18 @@
     <article>
 
         <header>
-            <h3></h3>
+            <h3>Description</h3>
         </header>
 
-        <p>Description: {{exercise.description/instructions}}</p>
+        <p>{{exercise.description-instructions}}</p>
 
     </article>
     
     {# Only show delete link if logged in AND owner #}
             {% if session.user_id and (exercise.user_id == session.user_id) %}
 
-                <a href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete</a>
+                {# <a href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete</a> #}
+                <a role="button" href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete Exercise</a>
 
             {% else %}
 
