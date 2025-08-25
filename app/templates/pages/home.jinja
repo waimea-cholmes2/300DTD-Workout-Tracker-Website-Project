@@ -46,9 +46,35 @@
 
     </article>
 
+    <article>
+
+            <h3>Add a New Exercise</h3>
+
+            <form action="/add-exercise" method="POST">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Name of New Exercise"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="description"
+                    placeholder="Exercise Description"
+                    required
+                >
+
+                <button>Add</button>
+
+            </form>
+
+        </article>
+
     {% else %}
 
-    <p>Please Login or Register to Continue</p>
+    <p>Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
 
     {% endif %}
 

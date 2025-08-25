@@ -51,18 +51,46 @@ def index():
     return render_template("pages/home.jinja", exercises = exercises)
 
 #-----------------------------------------------------------
+# Route for adding an exercise, using data posted from a form
+# - Restricted to logged in users
+#-----------------------------------------------------------
+@app.post("/add-exercise")
+@login_required
+def add_an_exercise():
+    # Get the data from the form
+    name  = request.form.get("name")
+    description = request.form.get("description")
+
+    # Sanitise the text inputs
+    name = html.escape(name)
+    description = html.escape(description)
+
+    # Get the user id from the session
+    user_id = session["user_id"]
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "INSERT INTO exercises (name, description, user_id) VALUES (?, ?, ?)"
+        params = [name, description, user_id]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash(f"Exerise '{name}' added", "success")
+        return redirect("/")
+
+#-----------------------------------------------------------
 # Exercise page route
 #-----------------------------------------------------------
 @app.get("/exercise/<int:id>")
-def exercise():
+def exercise(id):
     with connect_db() as client:
         # Get the thing details from the DB, including the owner info
         sql = """
             SELECT exercises.id,
                    exercises.name,
-                   exercises.description/instructions,
+                   exercises.description,
                    exercises.user_id,
-                   users.name AS owner
+                   users.username AS owner
 
             FROM exercises
             JOIN users ON exercises.user_id = users.id
@@ -75,8 +103,8 @@ def exercise():
         # Did we get a result?
         if result.rows:
             # yes, so show it on the page
-            thing = result.rows[0]
-            return render_template("pages/thing.jinja", thing=thing)
+            exercise = result.rows[0]
+            return render_template("pages/exercise.jinja", exercise=exercise)
 
         else:
             # No, so show error

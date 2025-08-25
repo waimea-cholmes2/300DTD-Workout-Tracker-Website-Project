@@ -9,30 +9,31 @@
 
 {% block title %}
 
-    {{exercise.name}}
+    Execise Page
 
 {% endblock %}
 
 
 {% block content %}
 
-    <h1>Graph will go here</h1>
+    <h1>{{exercise.name}}</h1>
+
+    <h2>Graph will go here</h2>
 
 
     <article>
 
         <header>
-            <h3></h3>
+            <h3>Description</h3>
         </header>
 
-        <p>Description: {{exercise.description/instructions}}</p>
+        <p>{{exercise.description}}</p>
 
     </article>
     
     {# Only show delete link if logged in AND owner #}
             {% if session.user_id and (exercise.user_id == session.user_id) %}
-
-                <a href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete</a>
+                <a role="button" href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete Exercise</a>
 
             {% else %}
 
@@ -40,7 +41,7 @@
 
             {% endif %}
 
-    <a role="button" href="/Add-Workout">Add Workout</a>
+    <a role="button" href="/add-workout">Add Workout</a>
 
 {% endblock %}
 
