@@ -75,7 +75,7 @@ def add_an_exercise():
         client.execute(sql, params)
 
         # Go back to the home page
-        flash(f"Exerise '{name}' added", "success")
+        flash(f"Exercise '{name}' added", "success")
         return redirect("/")
 
 #-----------------------------------------------------------
@@ -109,6 +109,36 @@ def exercise(id):
         else:
             # No, so show error
             return not_found_error()
+        
+#-----------------------------------------------------------
+# Favouriting route
+#-----------------------------------------------------------
+@app.post("/favourite/<int:exercise_id>")
+@login_required
+def toggle_favourite(exercise_id):
+    # Get the user's ID
+    user_id = session["user_id"]
+
+    with connect_db() as client:
+        # Check if this exercise is favourited
+        sql = "SELECT * FROM favourites WHERE user_id = ? AND exercise_id = ?"
+        params = [user_id, exercise_id]
+        result = client.execute(sql, params)
+
+        if result.rows:
+            # Already favourited so unfavourite
+            sql = "DELETE FROM favourites WHERE user_id = ? AND exercise_id = ?"
+            client.execute(sql, params)
+            flash("Exercise no longer a favourite.", "Success")
+        else:
+            # Not a favourite → add it
+            sql = "INSERT INTO favourites (user_id, exercise_id) VALUES (?, ?)"
+            client.execute(sql, params)
+            flash("Exercise now a favourite!", "success")
+
+    # Redirect back to the exercise page
+    return redirect(f"/exercise/{exercise_id}")
+
 
 
 #-----------------------------------------------------------
