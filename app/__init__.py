@@ -77,6 +77,26 @@ def add_an_exercise():
         # Go back to the home page
         flash(f"Exercise '{name}' added", "success")
         return redirect("/")
+    
+#-----------------------------------------------------------
+# Route for deleting an exercise, Id given in the route
+# - Restricted to logged in users
+#-----------------------------------------------------------
+@app.get("/delete/<int:id>")
+@login_required
+def delete_an_exercise(id):
+    # Get the user id from the session
+    user_id = session["user_id"]
+
+    with connect_db() as client:
+        # Delete the thing from the DB only if we own it
+        sql = "DELETE FROM exercises WHERE id=? AND user_id=?"
+        params = [id, user_id]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash("Exercise Deleted", "Success")
+        return redirect("/things")
 
 #-----------------------------------------------------------
 # Exercise page route
