@@ -47,17 +47,20 @@ Replace this text with notes any improvements you made as a result of the testin
 
 ---
 
-## Testing FEATURE NAME HERE
+## Favouriting and Unfavouiting exercises
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I've added the favourite route and button and now i will try to favourite and unfavourite an exercise
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Favouriting Error](screenshots/favouriting_error.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+The error was a result of me using the wrong method in my route, I was using the post method when i needed to use the GET method
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Favouriting Working](screenshots/favouriting.png)
+![Unfavouriting Working](screenshots/unfavouriting.png)
 
 
 ---

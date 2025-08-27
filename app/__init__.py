@@ -133,7 +133,7 @@ def exercise(id):
 #-----------------------------------------------------------
 # Favouriting route
 #-----------------------------------------------------------
-@app.post("/favourite/<int:exercise_id>")
+@app.get("/favourite/<int:exercise_id>")
 @login_required
 def toggle_favourite(exercise_id):
     # Get the user's ID
@@ -151,7 +151,7 @@ def toggle_favourite(exercise_id):
             client.execute(sql, params)
             flash("Exercise no longer a favourite.", "Success")
         else:
-            # Not a favourite → add it
+            # Not a favourite so add it
             sql = "INSERT INTO favourites (user_id, exercise_id) VALUES (?, ?)"
             client.execute(sql, params)
             flash("Exercise now a favourite!", "success")
@@ -159,6 +159,44 @@ def toggle_favourite(exercise_id):
     # Redirect back to the exercise page
     return redirect(f"/exercise/{exercise_id}")
 
+#-----------------------------------------------------------
+# Add Workout form route
+#-----------------------------------------------------------
+@app.get("/workout-add/<int:exercise_id>")
+def add_workout_form(exercise_id):
+    return render_template("pages/workout-add.jinja")
+
+
+#-----------------------------------------------------------
+# Route for adding a workout, using data posted from a form
+# - Restricted to logged in users
+#-----------------------------------------------------------
+@app.post("/add-workout/<int:exercise_id>")
+@login_required
+def add_a_workout(exercise_id):
+    # Get the data from the form
+    sets  = request.form.get("sets")
+    reps = request.form.get("reps")     # This like might work cant remember how to get the date properly from the form(fix)
+    date  = request.form.get("date")
+    weight  = request.form.get("weight")
+
+    # Sanitise the text inputs
+    sets = html.escape(sets)
+    reps = html.escape(reps)
+    weight = html.escape(weight)
+
+    # Get the user id from the session
+    user_id = session["user_id"]
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "INSERT INTO workouts (sets, reps, date, weight, user_id, exercise_id) VALUES (?, ?, ?, ?, ?, ?)"
+        params = [sets, reps, date, weight, user_id, exercise_id]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash("Workout added", "success")
+        return redirect("/")
 
 
 #-----------------------------------------------------------
