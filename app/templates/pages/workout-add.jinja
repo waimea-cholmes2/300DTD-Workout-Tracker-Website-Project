@@ -21,17 +21,17 @@
             <h2>Add a Workout</h2>
         </header>
 
-        <form action="/add-workout/<int:exercise_id>" method="POST">
+        <form action="/add-workout/{{ exercise_id }}" method="POST">
 
             <input
-                type="text"
+                type="number"
                 name="sets"
                 placeholder="Sets"
                 required
             >
 
             <input
-                type="text"
+                type="number"
                 name="reps"
                 placeholder="Reps"
                 required
@@ -45,7 +45,7 @@
             >
 
             <input
-                type="text"
+                type="number"
                 name="weight"
                 placeholder="Weight(Kg)"
                 required

@@ -124,7 +124,21 @@ def exercise(id):
         if result.rows:
             # yes, so show it on the page
             exercise = result.rows[0]
-            return render_template("pages/exercise.jinja", exercise=exercise)
+
+            user_id = session["user_id"]
+
+            # Check if the user has favourited this exercise
+            sql = "SELECT 1 FROM favourites WHERE user_id = ? AND exercise_id = ?"
+            params = [user_id, id]
+            result = client.execute(sql, params)
+
+            if result.rows:
+                is_favourited = True
+            else:
+                is_favourited = False
+
+
+            return render_template("pages/exercise.jinja", exercise=exercise, is_favourited = is_favourited)
 
         else:
             # No, so show error
@@ -164,7 +178,7 @@ def toggle_favourite(exercise_id):
 #-----------------------------------------------------------
 @app.get("/workout-add/<int:exercise_id>")
 def add_workout_form(exercise_id):
-    return render_template("pages/workout-add.jinja")
+    return render_template("pages/workout-add.jinja", exercise_id= exercise_id)
 
 
 #-----------------------------------------------------------
@@ -176,14 +190,12 @@ def add_workout_form(exercise_id):
 def add_a_workout(exercise_id):
     # Get the data from the form
     sets  = request.form.get("sets")
-    reps = request.form.get("reps")     # This like might work cant remember how to get the date properly from the form(fix)
+    reps = request.form.get("reps")     
     date  = request.form.get("date")
     weight  = request.form.get("weight")
 
     # Sanitise the text inputs
-    sets = html.escape(sets)
-    reps = html.escape(reps)
-    weight = html.escape(weight)
+    date = html.escape(date)
 
     # Get the user id from the session
     user_id = session["user_id"]
@@ -196,7 +208,7 @@ def add_a_workout(exercise_id):
 
         # Go back to the home page
         flash("Workout added", "success")
-        return redirect("/")
+        return redirect(f"/exercise/{exercise_id}")
 
 
 #-----------------------------------------------------------
