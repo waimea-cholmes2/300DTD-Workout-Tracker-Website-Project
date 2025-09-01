@@ -96,7 +96,7 @@ def delete_an_exercise(id):
 
         # Go back to the home page
         flash("Exercise Deleted", "Success")
-        return redirect("/things")
+        return redirect("/")
 
 #-----------------------------------------------------------
 # Exercise page route
@@ -137,12 +137,22 @@ def exercise(id):
             else:
                 is_favourited = False
 
+            # get all the users workouts for this exercise
+            sql = "SELECT * FROM workouts WHERE user_id = ? AND exercise_id = ?"
+            params = [user_id, id]
+            result = client.execute(sql, params)
 
-            return render_template("pages/exercise.jinja", exercise=exercise, is_favourited = is_favourited)
+            # put in the workouts variable depening on if it has any workouts
+            if result.rows:
+                workouts = result.rows
+                return render_template("pages/exercise.jinja", exercise=exercise, is_favourited = is_favourited, workouts = workouts)
+            else: 
+                return render_template("pages/exercise.jinja", exercise=exercise, is_favourited = is_favourited)
 
         else:
             # No, so show error
             return not_found_error()
+            
         
 #-----------------------------------------------------------
 # Favouriting route
@@ -178,7 +188,7 @@ def toggle_favourite(exercise_id):
 #-----------------------------------------------------------
 @app.get("/workout-add/<int:exercise_id>")
 def add_workout_form(exercise_id):
-    return render_template("pages/workout-add.jinja", exercise_id= exercise_id)
+    return render_template("pages/workout-add.jinja", exercise_id = exercise_id)
 
 
 #-----------------------------------------------------------
