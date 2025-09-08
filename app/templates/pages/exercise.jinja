@@ -46,7 +46,7 @@
                     <td>{{ workout.sets }}</td>
                     <td>{{ workout.reps }}</td>
                     <td>{{ workout.weight }}</td>
-                    <td><a href="/delete-workout">🗑️</a></td>
+                    <td><a href="/delete-workout/{{ workout.id }}">🗑️</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

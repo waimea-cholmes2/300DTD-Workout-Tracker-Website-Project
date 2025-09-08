@@ -97,6 +97,9 @@ def delete_an_exercise(id):
         # Go back to the home page
         flash("Exercise Deleted", "Success")
         return redirect("/")
+    
+
+
 
 #-----------------------------------------------------------
 # Exercise page route
@@ -139,7 +142,8 @@ def exercise(id):
 
             # get all the users workouts for this exercise
             sql = """
-                SELECT sets, 
+                SELECT id,
+                       sets, 
                        reps, 
                        date, 
                        weight
@@ -225,10 +229,32 @@ def add_a_workout(exercise_id):
         params = [sets, reps, date, weight, user_id, exercise_id]
         client.execute(sql, params)
 
-        # Go back to the home page
+        # Go back to the exercise page
         flash("Workout added", "success")
         return redirect(f"/exercise/{exercise_id}")
 
+
+
+#-----------------------------------------------------------
+# Route for deleting a workout, Id given in the route
+# - Restricted to logged in users
+#-----------------------------------------------------------
+@app.get("/delete-workout/<int:id>")
+@login_required
+def delete_a_workout(id):
+    # Get the user id from the session
+    user_id = session["user_id"]
+
+    with connect_db() as client:
+        # Delete the thing from the DB only if the user own it
+        sql = "DELETE FROM workouts WHERE id=? AND user_id=?"
+        params = [id, user_id]
+        client.execute(sql, params)
+
+        # Go back to the exercise page
+        flash("Workout Deleted", "Success")
+        return redirect(request.referrer)
+    
 
 #-----------------------------------------------------------
 # About page route

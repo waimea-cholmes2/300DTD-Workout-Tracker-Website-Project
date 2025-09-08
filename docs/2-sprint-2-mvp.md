@@ -80,17 +80,17 @@ I showed it to my end-user to see what they though and they reminded me I needed
 
 ---
 
-## Testing FEATURE NAME HERE
+## Deleting Workouts
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I made the route for deleting workouts, and then tried to use it, the item was being delted from the table, but the return redirect waasnt working.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Deleting Workout Fail](screenshots/delete_workouts_fail.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+The problem was that i wasnt passing through the exercise id into the route, so it couldnt look for the exercise. Instead of passing it through i used request referrer to go back to the previous page
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Deleting Workout](screenshots/delete_workout.png)
 
 
 ---
