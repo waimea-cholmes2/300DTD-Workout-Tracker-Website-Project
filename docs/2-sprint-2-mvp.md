@@ -65,17 +65,17 @@ The error was a result of me using the wrong method in my route, I was using the
 
 ---
 
-## Testing FEATURE NAME HERE
+## Workouts Table
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I've made the workouts table to show all of the data for each workout
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Workouts Table](screenshots/workouts_table.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I showed it to my end-user to see what they though and they reminded me I needed to add a delete button in the table, but other than that it was all good.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Workouts Table New](screenshots/workouts_table_new.png)
 
 
 ---

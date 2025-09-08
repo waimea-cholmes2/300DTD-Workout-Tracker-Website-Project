@@ -138,7 +138,16 @@ def exercise(id):
                 is_favourited = False
 
             # get all the users workouts for this exercise
-            sql = "SELECT * FROM workouts WHERE user_id = ? AND exercise_id = ?"
+            sql = """
+                SELECT sets, 
+                       reps, 
+                       date, 
+                       weight
+
+                FROM workouts
+                WHERE user_id=? AND exercise_id=?
+                ORDER BY date DESC
+            """
             params = [user_id, id]
             result = client.execute(sql, params)
 

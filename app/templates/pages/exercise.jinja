@@ -25,7 +25,35 @@
             Favourite Exercise
         {% endif %}</a>
 
-    <h2>Graph will go here</h2>
+    
+
+    {% if workouts %}
+        <h2>Your Workouts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Weight (Kg)</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for workout in workouts %}
+                <tr>
+                    <td>{{ workout.date }}</td>
+                    <td>{{ workout.sets }}</td>
+                    <td>{{ workout.reps }}</td>
+                    <td>{{ workout.weight }}</td>
+                    <td><a href="/delete-workout">🗑️</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+    <p>You have not logged any workouts for this exercise yet.</p>
+    {% endif %}
 
 
     <article>
