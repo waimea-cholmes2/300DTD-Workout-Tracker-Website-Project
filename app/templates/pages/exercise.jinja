@@ -66,8 +66,8 @@
 
     </article>
     
-    {# Only show delete link if logged in AND owner #}
-            {% if session.user_id and (exercise.user_id == session.user_id) %}
+            {# Only show delete link if logged in AND owner #}
+            {% if session.user_id and exercise.user_id == session.user_id %}
                 <a role="button" href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete Exercise</a>
 
             {% else %}
