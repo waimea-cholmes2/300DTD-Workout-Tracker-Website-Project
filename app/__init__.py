@@ -48,7 +48,18 @@ def index():
         params=[]
         result = client.execute(sql, params)
         exercises = result.rows
-    return render_template("pages/home.jinja", exercises = exercises)
+
+        # Get the user id from the session
+        user_id = session["user_id"]
+
+        sql = """
+            SELECT * FROM favourites where user_id = ?
+        """
+
+        params=[user_id]
+        result = client.execute(sql,params)
+        favourites = result.rows
+    return render_template("pages/home.jinja", exercises = exercises, favourites = favourites)
 
 #-----------------------------------------------------------
 # Route for adding an exercise, using data posted from a form

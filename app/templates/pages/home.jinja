@@ -1,8 +1,8 @@
 {#=====================================================
-  Home page
-  - Hero style greeting banner
-  - List of things passed in as 'things' array
-  - Form for adding a new thing
+Home page
+- Hero style greeting banner
+- List of things passed in as 'things' array
+- Form for adding a new thing
 =====================================================#}
 
 {% extends 'pages/base.jinja' %}
@@ -10,69 +10,62 @@
 
 {% block title %}
 
-    Home Page
+Home Page
 
 {% endblock %}
 
 
 {% block content %}
 
-    {% if session.user_id %}
+{% if session.user_id %}
 
-      <article>
+<article>
 
-        <ul>
-        
+    <ul>
+
         <h1>Exercises</h1>
 
-            {% for exercise in exercises %}
+        {% for exercise in exercises %}
 
-                <li>
-                    <p class="exercises">
-                        <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a>  
-                    </p>  
-                </li>
+        {% if exercise.id in favourites.exercise_id%}
 
-            {% else %}
+        <li>
+            <p class="exercises">
+                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a>
+            </p>
+        </li>
 
-                <p>None!</p>
+        {% endif %}
 
-            {% endfor %}
-        </ul>
+        {% else %}
 
-    </article>
+        <p>None!</p>
 
-    <article>
+        {% endfor %}
+    </ul>
 
-            <h3>Add a New Exercise</h3>
+</article>
 
-            <form action="/add-exercise" method="POST">
+<article>
 
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Name of New Exercise"
-                    required
-                >
+    <h3>Add a New Exercise</h3>
 
-                <input
-                    type="text"
-                    name="description"
-                    placeholder="Exercise Description"
-                    required
-                >
+    <form action="/add-exercise" method="POST">
 
-                <button>Add</button>
+        <input type="text" name="name" placeholder="Name of New Exercise" required>
 
-            </form>
+        <input type="text" name="description" placeholder="Exercise Description" required>
 
-        </article>
+        <button>Add</button>
 
-    {% else %}
+    </form>
 
-    <p>Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
+</article>
 
-    {% endif %}
+{% else %}
+
+<p>Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
+
+{% endif %}
 
 {% endblock %}
-
