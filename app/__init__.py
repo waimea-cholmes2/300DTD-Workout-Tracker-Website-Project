@@ -34,32 +34,40 @@ init_datetime(app)  # Handle UTC dates in timestamps
 @app.get("/")
 def index():
     with connect_db() as client:
-        # Get all the things from the DB
-        sql = """
-            SELECT exercises.id,
-                   exercises.name,
-                   users.name AS owner
+        # Get the user id from the session, if no user if it returns none
+        user_id = session.get("user_id")
 
-            FROM exercises
-            JOIN users ON exercises.user_id = users.id
+        if user_id:
+        
+            # Get all the things from the DB
+            sql = """
+                SELECT exercises.id,
+                    exercises.name,
+                    users.name AS owner
 
-            ORDER BY exercises.name ASC
-        """
-        params=[]
-        result = client.execute(sql, params)
-        exercises = result.rows
+                FROM exercises
+                JOIN users ON exercises.user_id = users.id
 
-        # Get the user id from the session
-        user_id = session["user_id"]
+                ORDER BY exercises.name ASC
+            """
+            params=[]
+            result = client.execute(sql, params)
+            exercises = result.rows
 
-        sql = """
-            SELECT * FROM favourites where user_id = ?
-        """
+            
 
-        params=[user_id]
-        result = client.execute(sql,params)
-        favourites = result.rows
-    return render_template("pages/home.jinja", exercises = exercises, favourites = favourites)
+            sql = """
+                SELECT * FROM favourites where user_id = ?
+            """
+
+            params=[user_id]
+            result = client.execute(sql,params)
+            favourites = result.rows
+            favourite_ids = {row["exercise_id"] for row in favourites}  # send only the exercise ids from favourites
+            return render_template("pages/home.jinja", exercises = exercises, favourites = favourite_ids)
+    
+        else:
+            return render_template("pages/home.jinja")
 
 #-----------------------------------------------------------
 # Route for adding an exercise, using data posted from a form

@@ -27,11 +27,11 @@ Home Page
 
         {% for exercise in exercises %}
 
-        {% if exercise.id in favourites.exercise_id%}
+        {% if exercise.id in favourites%}
 
         <li>
             <p class="exercises">
-                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a>
+                {%if exercise.owner.id == session.user_id%} * - {%endif%}<a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
             </p>
         </li>
 
