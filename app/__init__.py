@@ -43,6 +43,7 @@ def index():
             sql = """
                 SELECT exercises.id,
                     exercises.name,
+                    exercises.user_id AS owner_id,
                     users.name AS owner
 
                 FROM exercises
@@ -62,8 +63,7 @@ def index():
 
             params=[user_id]
             result = client.execute(sql,params)
-            favourites = result.rows
-            favourite_ids = {row["exercise_id"] for row in favourites}  # send only the exercise ids from favourites
+            favourite_ids = {row["exercise_id"] for row in result.rows}  # put all the exercise ids in a list
             return render_template("pages/home.jinja", exercises = exercises, favourites = favourite_ids)
     
         else:

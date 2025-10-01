@@ -73,7 +73,7 @@ I've made the workouts table to show all of the data for each workout
 
 ### Changes / Improvements
 
-I showed it to my end-user to see what they though and they reminded me I needed to add a delete button in the table, but other than that it was all good.
+I showed it to my end-user to see what they thought and they reminded me I needed to add a delete button in the table, but other than that it was all good.
 
 ![Workouts Table New](screenshots/workouts_table_new.png)
 

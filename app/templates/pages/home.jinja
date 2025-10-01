@@ -17,7 +17,11 @@ Home Page
 
 {% block content %}
 
+
+
 {% if session.user_id %}
+
+<a role="button" href="#add-workout">Delete Exercise</a>
 
 <article>
 
@@ -25,17 +29,46 @@ Home Page
 
         <h1>Exercises</h1>
 
-        {% for exercise in exercises %}
+        <h2>Favourites</h2>
 
-        {% if exercise.id in favourites%}
+        {% for exercise in exercises if exercise.id in favourites %}
 
         <li>
             <p class="exercises">
-                {%if exercise.owner.id == session.user_id%} * - {%endif%}<a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                {%if exercise.owner_id == session.user_id%} * - {%endif%}<a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
             </p>
         </li>
 
-        {% endif %}
+        {% else %}
+
+        <p>None!</p>
+
+        {% endfor %}
+
+        <h2>Owned</h2>
+        {% for exercise in exercises if exercise.owner_id == session.user_id %}
+
+        <li>
+            <p class="exercises">
+                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+            </p>
+        </li>
+
+        {% else %}
+
+        <p>None!</p>
+
+        {% endfor %}
+
+        <h2>Others</h2>
+
+        {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
+
+        <li>
+            <p class="exercises">
+                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+            </p>
+        </li>
 
         {% else %}
 
@@ -61,6 +94,9 @@ Home Page
     </form>
 
 </article>
+
+{# This is where the add a workout button goes, dragging the user down to the form #}
+<div id="add-workout"></div>
 
 {% else %}
 
