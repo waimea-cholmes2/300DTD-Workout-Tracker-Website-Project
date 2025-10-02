@@ -21,43 +21,46 @@ My solution to this problem will be to create a website avaliable to use on the 
 
 ## Functionality
 
-Replace this text with a clear explanation of what the implication means.
+The functionality implications of a digital technology or digital outcome relate to how well it works for the end-user, in terms of meeting its intended purpose.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Functionality is relevant to my project as it is vital that the sytems functions correctly to provide a positive user experience.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Moving forward I will need to constantly test my system, to ensure there are no bugs or errors in the website, I will also need to continue getting feedback from my end-user to ensure the system works the way they expect it to, if the site fails to function properly like crashing or having an error, users may become frustrated and lose trust in it.
+
 
 
 
 ## Usability
 
-Replace this text with a clear explanation of what the implication means.
+The usability implications of a digital technology or digital outcome (e.g. a website) relate to how easy it is to use for the end-user, without the need for help or guidance.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Usability is relevant to my project as it is important for the users to eb albe to complete any tasks in the site easily.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Moving forward I will need to ensure my website follows the common usability heuristics and the users need to be able to complete tasks easily, to do this I will need to ensure I Follow standard cinventions, Make the behaviour of the system logical and familiar, provide the end-user with a clear route forwards and backwards, and always make it obvious to the end-user what is happening. If the site is difficul to use and itr is not clear what the end-user might need to do, they may become frustrated with teh site, and stop using it.
 
 
 
 ## Aesthetics
 
-Replace this text with a clear explanation of what the implication means.
+The aesthetic implications of a digital technology or digital outcome (e.g. a website) relate to how it looks in terms of design.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+The aesthetics of the site are very important as the site needs to appeal to the end-users, and be correctly designed.
 
 ### Impact / Considerations
 
 Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+
+Moving forward I will need to ensure my design appeals to the end-users by contantky getting feedback from my end-user, I also need to ensure I follow conventions and that I correctly use colour, font and positioning.
 
 
 
