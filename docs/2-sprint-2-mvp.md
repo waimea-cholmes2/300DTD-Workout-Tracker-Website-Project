@@ -32,17 +32,17 @@ The key functionality of the web app was implemented:
 
 ---
 
-## Testing FEATURE NAME HERE
+## Exercise Table
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I'm getting the exercise Table to show favourites, owned and others separately, but the symbol to show the owned in the favourites I can't get to show
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Exercise not showing owned symbol](screenshots/exercise_no_own_showing.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+The problem was I wasnt pulling the exercises user id to compare with the sessions user id, so i fixed that
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Exercise showing owned symbol](screenshots/exercise_own_showing.png)
 
 
 ---

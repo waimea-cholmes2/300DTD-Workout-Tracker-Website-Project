@@ -64,21 +64,36 @@ Moving forward I will need to ensure my design appeals to the end-users by conta
 
 
 
-## NAME OF IMPLICATION 4
+## Accessibility
 
-Replace this text with a clear explanation of what the implication means.
+The accessibility implications of a digital technology or digital outcome (e.g. a website) involve ensuring it is available to, and can be used by, all end-users, regardless of their abilities.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Accessibility is relevant to my project as the possible end-users of my project can come many many difeerent backgrounds and be of various ages, meaning some will have more difficulty with technology than others.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Moving forward I will need to constant get feedback from my end-user, ensuring the site is easy to maneovoure for all possible end-users, I will need to ensure I choose good colour combinatiosn whoch work well with the text and icons, make sure I provide appropriate structure to aid in the end-users understanding the content, and I will need to enure the site is accessible on a range of devices and browsers.
 
 
 
-## NAME OF IMPLICATION 5
+## End-User
+
+The end-user implications of a digital technology or digital outcome (e.g. a website) are connected to the specific needs of the end-user(s).
+
+### Relevance to the System
+
+The end-user implications are relevant to my project as I am aiming to appeal to a specific group, people who go to the gym regularly.
+
+### Impact / Considerations
+
+Moving forward I will need to ensure that I meet all possible end-users specific needs, that my site appeals to gym goers, and that it works on the kind of devices they will be using. To do thsi I will need to get in contact with my end-user to learn as much about how I will need to design the website, using appropriate language and colours.
+
+
+---
+
+## NAME OF IMPLICATION 6 maybe idk if  i need to do 6
 
 Replace this text with a clear explanation of what the implication means.
 
