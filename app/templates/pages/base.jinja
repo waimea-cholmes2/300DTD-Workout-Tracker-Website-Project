@@ -44,7 +44,7 @@
 
                 {% endif %}
 
-                <li><a href="/">Exercises</a></li>
+                {% if session.user_id %}<li><a href="/">Exercises</a></li>{% endif %}
 
                 {% if session.user_id %}
 

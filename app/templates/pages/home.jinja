@@ -21,7 +21,7 @@ Home Page
 
 {% if session.user_id %}
 
-<a role="button" href="#add-workout">Delete Exercise</a>
+<a role="button" href="#add-workout">Add Exercise</a>
 
 <article>
 
@@ -29,7 +29,9 @@ Home Page
 
         <h1>Exercises</h1>
 
-        <h2>Favourites</h2> <h2 class="*">* - Owned</h2>
+        <h2>Favourites</h2> 
+        
+        <h3 class="*">* - Owned</h3>
 
         {% for exercise in exercises if exercise.id in favourites %}
 
