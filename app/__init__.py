@@ -113,13 +113,18 @@ def delete_an_exercise(id):
         params = [id, user_id]
         client.execute(sql, params)
 
-        sql = "DELETE FROM favourites WHERE exercise_id=?"
-        params = [id]
-        client.execute(sql, params)
+        if client.execute(sql,params).rowcount > 0:
+            sql = "DELETE FROM favourites WHERE exercise_id=?"
+            params = [id, user_id]
+            client.execute(sql, params)
 
-        # Go back to the home page
-        flash("Exercise Deleted", "Success")
-        return redirect("/")
+            # Go back to the home page
+            flash("Exercise Deleted", "Success")
+            return redirect("/")
+        else: 
+            # Go back to the home page
+            flash("Exercise fewavDeleted", "Success")
+            return redirect("/")   
     
 
 
