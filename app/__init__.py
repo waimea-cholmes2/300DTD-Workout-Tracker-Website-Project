@@ -118,20 +118,26 @@ def delete_an_exercise(id):
         # Delete the thing from the DB only if we own it
         sql = "DELETE FROM exercises WHERE id=? AND user_id=?"
         params = [id, user_id]
-        client.execute(sql, params)
-
-        if client.execute(sql,params).rowcount > 0:
+        result = client.execute(sql, params)
+        
+        # Check if the exercise was deleted before deleting favouites
+        sql = "SELECT 1 FROM exercises WHERE id=?"
+        params = [id]
+        result = client.execute(sql, params)
+        
+        if result.rows:
+            # Go back to the home page
+            flash("Exercise not found or you don't have permission to delete it")
+            return redirect("/") 
+            
+        else: 
             sql = "DELETE FROM favourites WHERE exercise_id=?"
-            params = [id, user_id]
+            params = [id]
             client.execute(sql, params)
 
             # Go back to the home page
             flash("Exercise Deleted", "Success")
             return redirect("/")
-        else: 
-            # Go back to the home page
-            flash("Exercise fewavDeleted", "Success")
-            return redirect("/")   
     
 
 
