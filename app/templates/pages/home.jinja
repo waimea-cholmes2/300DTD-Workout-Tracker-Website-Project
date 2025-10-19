@@ -21,7 +21,7 @@ Home Page
 
 {% if session.user_id %}
 
-<a role="button" href="#add-workout">Add Exercise</a>
+<a role="button" href="/exercise-add">Add an Exercise</a>
 
 <article>
 
@@ -80,25 +80,6 @@ Home Page
     </ul>
 
 </article>
-
-<article>
-
-    <h3>Add a New Exercise</h3>
-
-    <form action="/add-exercise" method="POST">
-
-        <input type="text" name="name" placeholder="Name of New Exercise" required>
-
-        <input type="text" name="description" placeholder="Exercise Description" required>
-
-        <button>Add</button>
-
-    </form>
-
-</article>
-
-{# This is where the add a workout button goes, dragging the user down to the form #}
-<div id="add-workout"></div>
 
 {% else %}
 

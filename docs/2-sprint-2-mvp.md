@@ -95,17 +95,17 @@ The problem was that i wasnt passing through the exercise id into the route, so 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Adding exercises
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+When adding the exercise the user would need to scroll down somewhat far depending on the amount of exercises
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Exercise form on home screen](screenshots/exercise_form_home.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+To fix this I've made the add exercise form be on an entirly separate page, that the users can get to by clicking the add exercise button.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Exercise form on new page](screenshots/exercise_form_page.png)
 
 
 ---

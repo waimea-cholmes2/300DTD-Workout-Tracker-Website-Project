@@ -68,6 +68,13 @@ def index():
     
         else:
             return render_template("pages/home.jinja")
+        
+#-----------------------------------------------------------
+# Add Exercise form route
+#-----------------------------------------------------------
+@app.get("/exercise-add")
+def add_exercise_form():
+    return render_template("pages/exercise-add.jinja")
 
 #-----------------------------------------------------------
 # Route for adding an exercise, using data posted from a form
