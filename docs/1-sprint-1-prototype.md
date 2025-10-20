@@ -26,7 +26,6 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 ### Required Data Input
 
-Replace this text with a description of what data will be input, and where / how it will be obtained.
 - The First data that will be input by the user will be them signing in or registering through the sign in and register form page
 
 - The user can input a workout of an exercise of their choice, they will input the reps, sets an weight they did for the workout in the add progress form, they can also delete any progress they want in the exercises page
@@ -37,7 +36,6 @@ Replace this text with a description of what data will be input, and where / how
 
 ### Required Data Output
 
-Replace this text with a description of the outputs for the system - what types of data will be displayed?
 - When the user signs in a small piece of text will be displayed on th ehome screen, welcoming the user using their name
 
 - When a user adds their progress to an exercise a small piece of text on the screen will diplaying saying their progress has been added,  this will also update the table or graph shwoing the users progress, when delting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.

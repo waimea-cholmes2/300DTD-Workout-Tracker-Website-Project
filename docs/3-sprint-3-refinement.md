@@ -26,7 +26,7 @@ The web app is fully implemented with a refined UI:
 
 ---
 
-## Testing FEATURE NAME HERE
+## asking are you sure when delting workouts
 
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 

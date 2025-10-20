@@ -27,7 +27,7 @@ Develop a bare-bones, working web application that provides the key functionalit
 
 The key functionality of the web app was implemented:
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
+![MVP](screenshots/MVP-300DTD.gif)
 
 
 ---
@@ -103,7 +103,7 @@ When adding the exercise the user would need to scroll down somewhat far dependi
 
 ### Changes / Improvements
 
-To fix this I've made the add exercise form be on an entirly separate page, that the users can get to by clicking the add exercise button.
+To fix this i spoke to my end-user to see what they wanted me to do, and they said to make the add exercise form be on an entirly separate page, that the users can get to by clicking the add exercise button.
 
 ![Exercise form on new page](screenshots/exercise_form_page.png)
 
@@ -157,5 +157,16 @@ Replace this text with notes any improvements you made as a result of the testin
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+This sprint has helped to move the project forward by providing a solid and function base for the system, the main goals of the sprint have been met, as the syetm is now readsy to be refined into the final product in sprint 3.
+
+Key success points:
+ - The MVP has been finished and tested, meaning it is now ready to be made into  the final product
+ - All tables in the database link correctly and have been implemented properly
+ - The core functionality of the website has been provided
+ - I was able to improve the site through user feedback
+ - Many bugs were able to be fixed especially errors in the routes
+
+ Challenges:
+ - Small issues with route methods at one point, whioch took a while to realise the error
+ - delete redirect not working due to missing parameters also took a while to find a solution
 
