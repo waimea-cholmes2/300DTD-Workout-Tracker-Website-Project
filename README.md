@@ -1,4 +1,4 @@
-# PROJECT NAME HERE
+# Workout Tracker
 
 by Cooper Holmes
 
@@ -7,7 +7,7 @@ by Cooper Holmes
 
 ## Project Description
 
-My Project is a Workout Trcaker, that will track weight, sets and reps
+My Project is a Workout Tracker, that will track weight, sets and reps
 
 - Adding and removing exercises
 - Able to use other peoples exercises

@@ -57,6 +57,10 @@ header nav ul {
     list-style: none;
 }
 
+.hello {
+    color: black;
+}
+
 /*---------------nav--------------*/
 
 nav {
@@ -75,6 +79,17 @@ body {
     background-color: black;
 }
 
+a[role ="button"] {
+    background-color: goldenrod;
+    color: black;
+}
+
+a[role ="button"]:hover {
+    background-color: goldenrod;
+    color: black;
+    text-decoration: underline;
+}
+
 /*-----------------main---------------*/
 
 main {
@@ -83,12 +98,6 @@ main {
     margin-bottom: 0;
     margin: 0;
     padding: 0;
-}
-
-.exercise-buttons {
-    display: block;
-    margin: 0.5rem auto;
-    text-align: center;
 }
 
 
