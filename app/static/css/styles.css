@@ -33,27 +33,104 @@
 #messages .message.success { color: var(--pico-color-green-500); }
 #messages .message.error   { color: var(--pico-color-red-500); }
 
+/* -----------Header---------------*/
+
 header {
     background-color: red;
 }
 
-nav {
-    background-color: red;
+header a {
     color: black;
 }
 
+
+header nav {
+    width: 100%;
+    margin: 0;
+}
+
+header nav ul {
+    width: 100%;     
+    display: flex;    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*---------------nav--------------*/
+
+nav {
+    background-color: red;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------body----------------*/
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: black;
 }
+
+/*-----------------main---------------*/
 
 main {
     background-color: black;
+    flex: 1;
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
+
+.exercise-buttons {
+    display: block;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+
+
+/*--------------Footer-------------*/
 
 footer {
     background-color: red;
-    height: 20rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    margin-top: auto;
+    font-weight: bold;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+footer p {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
 
+.request-login-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: yellow;
+    height: 50vh;
+}
 
+.request-login-message a {
+    margin: 0.2rem;
+    color: darkgoldenrod;
+    text-decoration-color: yellow;
+}
+
+.request-login-message a:hover {
+    margin: 0.2rem;
+    color: yellow;
+    text-decoration-color: yellow;
+}

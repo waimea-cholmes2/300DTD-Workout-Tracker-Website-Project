@@ -21,69 +21,105 @@ Home Page
 
 {% if session.user_id %}
 
-<a role="button" href="/exercise-add">Add an Exercise</a>
+    {# <a role="button" href="/exercise-add">Add an Exercise</a>
 
-<article>
-
-    <ul>
-
+     <article>
         <h1>Exercises</h1>
-
         <h2>Favourites</h2> 
-        
-        <h3 class="*">* - Owned</h3>
+        <h3 class="owned-indicator">* - Owned</h3>
 
         {% for exercise in exercises if exercise.id in favourites %}
-
-        <li>
-            <p class="exercises">
-                {%if exercise.owner_id == session.user_id%} * - {%endif%}<a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-            </p>
-        </li>
-
+            <a role ="button" href="/exercise/{{ exercise.id }}" class="exercise-buttons">
+            {% if exercise.owner_id == session.user_id %}* - {% endif %}{{ exercise.name }}
+            </a>
         {% else %}
-
-        <p>None!</p>
-
+            <p>None!</p>
         {% endfor %}
 
         <h2>Owned</h2>
         {% for exercise in exercises if exercise.owner_id == session.user_id %}
-
-        <li>
-            <p class="exercises">
-                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-            </p>
-        </li>
-
+            <a class ="exercise-buttons" role ="button" href="/exercise/{{ exercise.id }}">
+            {{ exercise.name }}
+            </a>
         {% else %}
-
-        <p>None!</p>
-
+            p>None!</p>
         {% endfor %}
 
         <h2>Others</h2>
-
         {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
-
-        <li>
-            <p class="exercises">
-                <a href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-            </p>
-        </li>
-
+            <a class ="exercise-buttons" role ="button" href="/exercise/{{ exercise.id }}">
+            {{ exercise.name }}
+            </a>
         {% else %}
+            <p>None!</p>
+        {% endfor %}                                
+                
 
-        <p>None!</p>
+                
 
-        {% endfor %}
-    </ul>
+    </article>  #}
+               
+    <article>
 
-</article>
+        <ul>
+
+            <h1>Exercises</h1>
+
+            <h2>Favourites</h2> 
+            
+            <h3 class="*">* - Owned</h3>
+
+            {% for exercise in exercises if exercise.id in favourites %}
+
+            <li>
+                <p class="exercises">
+                    {%if exercise.owner_id == session.user_id%} * - {%endif%}<a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                </p>
+            </li>
+
+            {% else %}
+
+            <p>None!</p>
+
+            {% endfor %}
+
+            <h2>Owned</h2>
+            {% for exercise in exercises if exercise.owner_id == session.user_id %}
+
+            <li>
+                <p class="exercises">
+                    <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                </p>
+            </li>
+
+            {% else %}
+
+            <p>None!</p>
+
+            {% endfor %}
+
+            <h2>Others</h2>
+
+            {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
+
+            <li>
+                <p class="exercises">
+                    <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                </p>
+            </li> 
+
+            {% else %}
+
+            <p>None!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
 
 {% else %}
 
-<p>Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
+<p class="request-login-message">Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
 
 {% endif %}
 
