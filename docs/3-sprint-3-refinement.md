@@ -41,9 +41,9 @@ Replace this text with notes any improvements you made as a result of the testin
 
 ---
 
-## Testing FEATURE NAME HERE
+## Exercise list
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+Looking at the exercise list when on a screen larger than a phone it can seem too wide, with the titles being really far apart
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 

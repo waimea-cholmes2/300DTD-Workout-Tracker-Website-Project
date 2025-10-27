@@ -113,10 +113,10 @@ main {
 
 .exercises-header {
     display: flex;
-    align-items: center;       /* Keeps them vertically aligned */
-    justify-content: space-between; /* Pushes one left, one right */
-    width: 100%;
-    padding: 0 1rem;
+    align-items: center;       
+    justify-content: space-between; 
+    width: 20rem;
+    margin: 0 auto;
 }
 
 .owned-symbol {
@@ -132,21 +132,23 @@ main {
 
 article {
     display: flex;
-    align-items: center;     /* centers the ul horizontally */
-    width: 100%;
-    flex-direction: column;     /* stack header and list vertically */
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: column;
 }
 
 article ul {
     padding: 0;
+    max-width: 100%;
 }
 
 .exercises-list {
     display: flex;
     flex-direction: column;
-    align-items: center;         /* centers child elements */
+    align-items: center;
     width: 100%;
-    padding: 0 1rem;            /* adds some breathing room on mobile */
+    padding: 0 1rem;
 }
 
 .exercises-list h2 {
@@ -159,6 +161,15 @@ article ul {
     width: 100%;
     max-width: 600px;
     text-align: left;
+    align-items: center;
+}
+
+.add-data-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    border-radius: 3rem;
+    font-size: 0.75rem;
 }
 
 /*----------------Form--------------*/
