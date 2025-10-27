@@ -90,6 +90,17 @@ a[role ="button"]:hover {
     text-decoration: underline;
 }
 
+.add-button {
+    background-color: goldenrod;
+    color: black;
+}
+
+.add-button:hover { 
+    background-color: goldenrod;
+    color: black;
+    text-decoration: underline;
+}
+
 /*-----------------main---------------*/
 
 main {
@@ -100,6 +111,63 @@ main {
     padding: 0;
 }
 
+.exercises-header {
+    display: flex;
+    align-items: center;       /* Keeps them vertically aligned */
+    justify-content: space-between; /* Pushes one left, one right */
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.owned-symbol {
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+
+.fav-star {
+    font-size: 1.5rem;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+article {
+    display: flex;
+    align-items: center;     /* centers the ul horizontally */
+    width: 100%;
+    flex-direction: column;     /* stack header and list vertically */
+}
+
+article ul {
+    padding: 0;
+}
+
+.exercises-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* centers child elements */
+    width: 100%;
+    padding: 0 1rem;            /* adds some breathing room on mobile */
+}
+
+.exercises-list h2 {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.exercises-list li {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+/*----------------Form--------------*/
+
+form {
+    display: flex;
+    flex-direction: column; /* stack inputs vertically */
+    gap: 1rem;              /* space between each input */
+}
 
 
 /*--------------Footer-------------*/

@@ -20,99 +20,64 @@ Home Page
 
 
 {% if session.user_id %}
-
-    {# <a role="button" href="/exercise-add">Add an Exercise</a>
-
-     <article>
-        <h1>Exercises</h1>
-        <h2>Favourites</h2> 
-        <h3 class="owned-indicator">* - Owned</h3>
-
-        {% for exercise in exercises if exercise.id in favourites %}
-            <a role ="button" href="/exercise/{{ exercise.id }}" class="exercise-buttons">
-            {% if exercise.owner_id == session.user_id %}* - {% endif %}{{ exercise.name }}
-            </a>
-        {% else %}
-            <p>None!</p>
-        {% endfor %}
-
-        <h2>Owned</h2>
-        {% for exercise in exercises if exercise.owner_id == session.user_id %}
-            <a class ="exercise-buttons" role ="button" href="/exercise/{{ exercise.id }}">
-            {{ exercise.name }}
-            </a>
-        {% else %}
-            p>None!</p>
-        {% endfor %}
-
-        <h2>Others</h2>
-        {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
-            <a class ="exercise-buttons" role ="button" href="/exercise/{{ exercise.id }}">
-            {{ exercise.name }}
-            </a>
-        {% else %}
-            <p>None!</p>
-        {% endfor %}                                
-                
-
-                
-
-    </article>  #}
                
     <article>
+            <div class="exercises-header">
+                <h1>Exercises</h1>  
+                <h1 class="owned-symbol">* - Owned</h1>
+            </div>
 
         <ul>
-
-            <h1>Exercises</h1>
-
-            <h2>Favourites</h2> 
             
-            <h3 class="*">* - Owned</h3>
 
-            {% for exercise in exercises if exercise.id in favourites %}
+            <div class="exercises-list">
+                <h2>Favourites</h2> 
+                
+                {% for exercise in exercises if exercise.id in favourites %}
 
-            <li>
-                <p class="exercises">
-                    {%if exercise.owner_id == session.user_id%} * - {%endif%}<a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-                </p>
-            </li>
+                    <li>
+                        <p class="exercises">
+                            {%if exercise.owner_id == session.user_id%}<span class="fav-star"> * - </span>{%endif%}<a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                        </p>
+                    </li>
 
-            {% else %}
+                {% else %}
 
-            <p>None!</p>
+                    <p>None!</p>
 
-            {% endfor %}
+                {% endfor %}
 
-            <h2>Owned</h2>
-            {% for exercise in exercises if exercise.owner_id == session.user_id %}
+                <h2>Owned</h2>
+                {% for exercise in exercises if exercise.owner_id == session.user_id %}
 
-            <li>
-                <p class="exercises">
-                    <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-                </p>
-            </li>
+                    <li>
+                        <p class="exercises">
+                            <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                        </p>
+                    </li>
 
-            {% else %}
+                {% else %}
 
-            <p>None!</p>
+                    <p>None!</p>
 
-            {% endfor %}
+                {% endfor %}
 
-            <h2>Others</h2>
+                <h2>Others</h2>
 
-            {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
+                {% for exercise in exercises if exercise.id not in favourites and exercise.owner_id != session.user_id %}
 
-            <li>
-                <p class="exercises">
-                    <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
-                </p>
-            </li> 
+                    <li>
+                        <p class="exercises">
+                            <a role = "button" href="/exercise/{{ exercise.id }}">{{exercise.name}}</a> 
+                        </p>
+                    </li> 
 
-            {% else %}
+                {% else %}
 
-            <p>None!</p>
+                    <p>None!</p>
 
-            {% endfor %}
+                {% endfor %}
+            </div>
         </ul>
 
     </article>

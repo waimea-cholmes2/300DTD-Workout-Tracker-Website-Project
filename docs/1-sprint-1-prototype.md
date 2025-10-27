@@ -38,11 +38,11 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 - When the user signs in a small piece of text will be displayed on th ehome screen, welcoming the user using their name
 
-- When a user adds their progress to an exercise a small piece of text on the screen will diplaying saying their progress has been added,  this will also update the table or graph shwoing the users progress, when delting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.
+- When a user adds their progress to an exercise a small piece of text on the screen will diplaying saying their progress has been added,  this will also update the table or graph shwoing the users progress, when deleting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.
 
 - When the user adds an exercise a small piece of text will show up saying it was successful, when delting an exercise the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the exercise will be gone
 
-- When an exercise os favourited, the exercise will be moved up wit the other favouited exercises on the home page, and inside the exercises page their will be some symbol/button to show that it is favouited.
+- When an exercise os favourited, the exercise will be moved up wit the other favouited exercises on the home page, and inside the exercises page their will be some symbol/button to show that it is favourited.
 
 
 
