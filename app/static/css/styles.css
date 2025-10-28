@@ -35,7 +35,7 @@
 
 /* -----------Header---------------*/
 
-header {
+/* header {
     background-color: red;
 }
 
@@ -65,7 +65,7 @@ header nav ul {
 header nav ul li a {
     padding-right: 0; 
     margin-right: 0;
-}
+} */
 
 /*---------------nav--------------*/
 
@@ -73,7 +73,19 @@ nav {
     background-color: red;
     color: black;
     margin: 0;
-    padding: 0;
+    padding-left: 3vw;
+    padding-right: 3rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+}
+
+.logo {
+    max-width: 6rem;
+    max-height: 7rem;
 }
 
 /*-------------body----------------*/
@@ -84,6 +96,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: black;
+    padding: 0;
+    margin: 0;
 }
 
 a[role ="button"] {
@@ -134,7 +148,6 @@ a[role ="button"]:hover {
 main {
     background-color: black;
     flex: 1;
-    margin-bottom: 0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -251,7 +264,7 @@ form {
 
 /*--------------Footer-------------*/
 
-footer {
+.footer {
     background-color: red;
     text-align: center;
     padding: 2rem;
@@ -259,12 +272,11 @@ footer {
     margin-top: auto;
     font-weight: bold;
     width: 100%;
-    max-width: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
-footer p {
+.footer p {
     color: black;
     margin: 0;
     padding: 0;

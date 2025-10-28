@@ -31,10 +31,9 @@
 
 <body>
 
-    <header>
         <nav>
             <ul>
-                <li><img src="docs/screenshots/logo.png" alt="Logo" /></li>
+                <li><img class="logo" src="static/images/logo.png" alt="Logo" /></li>
             </ul>
 
             <ul>
@@ -54,7 +53,6 @@
 
             </ul>
         </nav>
-    </header>
 
 
     {# Show flash messages from any previous events #}
@@ -72,9 +70,9 @@
     {# Show debug info. Comment this out if not needed #}
     {% include "components/debug.jinja" %}
 
-    <footer>
+    <div class="footer">
         <p>©2025 Cooper Holmes</p>
-    </footer>
+    </div>
     
 </body>
 
