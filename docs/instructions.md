@@ -100,7 +100,7 @@ Use complex techniques to develop a database means that, taking into account the
    - [x] **Values** - auto-generation / default values as required
    - [x] Source and structure of **Input Data** is described
    - [x] Type and format of **Output Data** is described
-   - [ ] **Processing of Data** to achieve the output is described
+   - [x] **Processing of Data** to achieve the output is described
 
 3. You should use appropriate tools and complex techniques to organise and query the data:
    - [x] **Linking data in related tables** using queries or keys
@@ -116,9 +116,9 @@ Use complex techniques to develop a database means that, taking into account the
    - [x] Show that any input user data **updates the database as expected**
 
 6. You need to explain and address relevant implications:
-   - [ ] Identify the **implications most relevant** to your project
-   - [ ] Explain **what the implications mean** and **why each is relevant** to your project
-   - [ ] Explain **how each implication will impact your specific project** (considerations / choices / designs)
+   - [x] Identify the **implications most relevant** to your project
+   - [x] Explain **what the implications mean** and **why each is relevant** to your project
+   - [x] Explain **how each implication will impact your specific project** (considerations / choices / designs)
    - [ ] At the end of your project, you need to **explain what you did in your project to address each implication**
 
 *Note: You must satisfy **all** of the criteria above to pass*

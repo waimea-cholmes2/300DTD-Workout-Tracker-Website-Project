@@ -51,6 +51,19 @@ Develop a prototype that simulates the key functionality of the system, then tes
 ### Required Data Processing
 
 Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
+- When a user registers an account in the system, their name, username and password are sent to the server where the password is hashed and stored to protect user privacy
+
+- When logging in the system checks the inputed username and password with the ones in the database, if it matches with a registered user it creates a session for the user, allowing personalised data to load
+
+- When a user adds a workout the system links their user id and the exercise's id to the workouts table and ensures all of the correct data will be input
+
+- When deleting a workout the system will compare the users id to the user id of the workout being deleted, to ensure that it is being deleted by the owner
+
+- When a user adds a new exercise the system will store all of the info of the exercise like name and descreiption, while linking the users id to the table.
+
+- The exercises will be sorted into 3 categories favourites, owned and others, depending on their state
+
+- When a user clicks the favuoite button the system will check if the exercise is already favouited then will either favourite or unfavourite depending if it is or isnt favourited
 
 
 ---

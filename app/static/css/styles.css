@@ -47,6 +47,10 @@ header a {
 header nav {
     width: 100%;
     margin: 0;
+    padding: 0 1rem;
+    display: flex;              
+    justify-content: space-between;
+    gap: 0;
 }
 
 header nav ul {
@@ -55,10 +59,12 @@ header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 0;
 }
 
-.hello {
-    color: black;
+header nav ul li a {
+    padding-right: 0; 
+    margin-right: 0;
 }
 
 /*---------------nav--------------*/
@@ -75,6 +81,7 @@ nav {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     background-color: black;
 }
@@ -101,6 +108,27 @@ a[role ="button"]:hover {
     text-decoration: underline;
 }
 
+.request-login-register-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: yellow;
+    height: 50vh;
+}
+
+.request-login-register-message a {
+    margin: 0.2rem;
+    color: darkgoldenrod;
+    text-decoration-color: yellow;
+}
+
+.request-login-register-message a:hover {
+    margin: 0.2rem;
+    color: yellow;
+    text-decoration-color: yellow;
+}
+
 /*-----------------main---------------*/
 
 main {
@@ -109,6 +137,21 @@ main {
     margin-bottom: 0;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.exercise-page {
+    width: 100%;
+    max-width: 100%;
 }
 
 .exercises-header {
@@ -130,7 +173,7 @@ main {
     font-weight: bold;
 }
 
-article {
+.exercise-list {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -138,12 +181,12 @@ article {
     flex-direction: column;
 }
 
-article ul {
+.exercise-list ul {
     padding: 0;
     max-width: 100%;
 }
 
-.exercises-list {
+.exercises-table {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,13 +194,13 @@ article ul {
     padding: 0 1rem;
 }
 
-.exercises-list h2 {
+.exercises-table h2 {
     width: 100%;
     max-width: 600px;
     text-align: left;
 }
 
-.exercises-list li {
+.exercises-table li {
     width: 100%;
     max-width: 600px;
     text-align: left;
@@ -166,20 +209,45 @@ article ul {
 
 .add-data-button {
     position: fixed;
-    bottom: 2rem;
+    bottom: 3rem;
     right: 1rem;
     border-radius: 3rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    width: 6rem;
+    z-index: 1000;  /* move button to front */
+}
+
+.delete-data-button {
+    position: fixed;
+    bottom: 3rem;
+    left: 1rem;
+    border-radius: 3rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    width: 6rem;
+    z-index: 1000;  /* move button to front */
 }
 
 /*----------------Form--------------*/
 
 form {
     display: flex;
-    flex-direction: column; /* stack inputs vertically */
-    gap: 1rem;              /* space between each input */
+    flex-direction: column;
+    gap: 1rem;              
 }
 
+.form-register-login {
+    margin: 0.2rem;
+    color: darkgoldenrod;
+    text-decoration-color: yellow;
+}
+
+.form-register-login:hover {
+    margin: 0.2rem;
+    color: yellow;
+    text-decoration-color: yellow;
+}
 
 /*--------------Footer-------------*/
 
@@ -202,23 +270,3 @@ footer p {
     padding: 0;
 }
 
-.request-login-message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: yellow;
-    height: 50vh;
-}
-
-.request-login-message a {
-    margin: 0.2rem;
-    color: darkgoldenrod;
-    text-decoration-color: yellow;
-}
-
-.request-login-message a:hover {
-    margin: 0.2rem;
-    color: yellow;
-    text-decoration-color: yellow;
-}

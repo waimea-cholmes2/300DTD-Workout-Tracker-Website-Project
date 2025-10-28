@@ -34,15 +34,10 @@
     <header>
         <nav>
             <ul>
-                <li><strong><a href="/">Workout Tracker</a></strong></li>
+                <li><img src="docs/screenshots/logo.png" alt="Logo" /></li>
             </ul>
 
             <ul>
-                {% if session.user_name %}
-
-                    <li class="hello">Hello, {{ session.user_name }}</li>
-
-                {% endif %}
 
                 {% if session.user_id %}<li><a href="/">Exercises</a></li>{% endif %}
 

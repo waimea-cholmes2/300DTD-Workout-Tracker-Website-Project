@@ -21,7 +21,7 @@ Home Page
 
 {% if session.user_id %}
                
-    <article>
+    <article class="exercise-list">
             <div class="exercises-header">
                 <h1>Exercises</h1>  
                 <h1 class="owned-symbol">* - Owned</h1>
@@ -30,7 +30,7 @@ Home Page
         <ul>
             
 
-            <div class="exercises-list">
+            <div class="exercises-table">
                 <h2>Favourites</h2> 
                 
                 {% for exercise in exercises if exercise.id in favourites %}
@@ -86,7 +86,7 @@ Home Page
 
 {% else %}
 
-<p class="request-login-message">Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
+<p class="request-login-register-message">Please <a href="/login">Login</a> or <a href="/register">Register</a> to Continue</p>
 
 {% endif %}
 

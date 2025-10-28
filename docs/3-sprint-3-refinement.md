@@ -8,15 +8,6 @@ Develop the system until it is fully featured, with a refined UI and it satisfie
 
 ---
 
-## Updated Database Schema (if it changed)
-
-Replace this text with notes regarding the DB schema.
-
-![SCREENSHOT OF DB SCHEMA](screenshots/example.png)
-
-
----
-
 ## Final Implementation
 
 The web app is fully implemented with a refined UI:
@@ -26,17 +17,15 @@ The web app is fully implemented with a refined UI:
 
 ---
 
-## asking are you sure when delting workouts
+## Asking are you sure when deleting workouts
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+When deleting workouts there is no asking 'are you sure' before it is deleted
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+My end user said they do want there to be a small pop up asking if they are sure, incase they press delete by mistake.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Workout Pop Up](screenshots/workout-pop-up.png)
 
 
 ---
@@ -45,28 +34,28 @@ Replace this text with notes any improvements you made as a result of the testin
 
 Looking at the exercise list when on a screen larger than a phone it can seem too wide, with the titles being really far apart
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Wide Exercise List](screenshots/exerciselist-wide.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+Talking to my end-user they said they would prefer that when on the exercise list it had a set width, so it never gets too wide
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Fixed Exercise list](screenshots/exerciselist-small.png)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Add Exercise Button
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+The add exercise button is in on position on the page, and can be somehwat difficult to find if at the bottom, and the user is needed to scroll
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Add Exercise Button](screenshots/exercise-add.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+my end user said i should have the button fixed in the corner of the screen
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Add Exercise Button Fixed](screenshots/exercise-add-fixed.png)
 
 
 ---

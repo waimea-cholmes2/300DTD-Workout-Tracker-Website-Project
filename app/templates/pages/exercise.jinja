@@ -15,68 +15,68 @@
 
 
 {% block content %}
+    <div class="exercise-page">
+        <h1>{{exercise.name}}</h1>
 
-    <h1>{{exercise.name}}</h1>
-
-    <a role="button" href="/favourite/{{ exercise.id }}" onclick="return confirm('Are You Sure?');">
-        {% if is_favourited %}
-            Unfavourite Exercise
-        {% else %}
-            Favourite Exercise
-        {% endif %}</a>
-
-    
-
-    {% if workouts %}
-        <h2>Your Workouts</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Sets</th>
-                    <th>Reps</th>
-                    <th>Weight (Kg)</th>
-                    <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for workout in workouts %}
-                <tr>
-                    <td>{{ workout.date }}</td>
-                    <td>{{ workout.sets }}</td>
-                    <td>{{ workout.reps }}</td>
-                    <td>{{ workout.weight }}</td>
-                    <td><a href="/delete-workout/{{ workout.id }}">🗑️</a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-    <p>You have not logged any workouts for this exercise yet.</p>
-    {% endif %}
-
-
-    <article>
-
-        <header>
-            <h3>Description</h3>
-        </header>
-
-        <p>{{exercise.description}}</p>
-
-    </article>
-    
-            {# Only show delete link if logged in AND owner #}
-            {% if session.user_id and exercise.user_id == session.user_id %}
-                <a role="button" href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete Exercise</a>
-
+        <a role="button" href="/favourite/{{ exercise.id }}" onclick="return confirm('Are You Sure?');">
+            {% if is_favourited %}
+                Unfavourite Exercise
             {% else %}
+                Favourite Exercise
+            {% endif %}</a>
 
-                Owner: <strong>{{ exercise.owner }}</strong>
+        
 
-            {% endif %}
+        {% if workouts %}
+            <h2>Your Workouts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Sets</th>
+                        <th>Reps</th>
+                        <th>Weight (Kg)</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for workout in workouts %}
+                    <tr>
+                        <td>{{ workout.date }}</td>
+                        <td>{{ workout.sets }}</td>
+                        <td>{{ workout.reps }}</td>
+                        <td>{{ workout.weight }}</td>
+                        <td><a href="/delete-workout/{{ workout.id }}" onclick="return confirm('Really delete?');">🗑️</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+        <p>You have not logged any workouts for this exercise yet.</p>
+        {% endif %}
 
-    <a role="button" href="/workout-add/{{ exercise.id }}">Add Workout</a>
 
+        <article>
+
+            <header>
+                <h3>Description</h3>
+            </header>
+
+            <p>{{exercise.description}}</p>
+
+        </article>
+        
+                {# Only show delete link if logged in AND owner #}
+                {% if session.user_id and exercise.user_id == session.user_id %}
+                    <a role="button" class="delete-data-button" href="/delete/{{ exercise.id }}" onclick="return confirm('Really delete?');">Delete Exercise</a>
+
+                {% else %}
+
+                    Owner: <strong>{{ exercise.owner }}</strong>
+
+                {% endif %}
+
+        <a role="button" class="add-data-button" href="/workout-add/{{ exercise.id }}">Add Workout</a>
+    </div>
 {% endblock %}
 
