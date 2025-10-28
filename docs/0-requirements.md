@@ -93,58 +93,61 @@ Moving forward I will need to ensure that I meet all possible end-users specific
 
 ---
 
-## NAME OF IMPLICATION 6 maybe idk if  i need to do 6
+## Privacy
 
-Replace this text with a clear explanation of what the implication means.
+The privacy implications of a digital technology or digital outcome (e.g. a website) relate to protecting the privacy of end-users and their data.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+The privacy implications are important for my project as it will be storing end user data and that data will be needed for the system to function
 
 ### Impact / Considerations
 
 Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Moving forward I will need to ensure that i only collect needed data, and that that data will only only be stored if the system will need to use it, I will also need to ensure that stored data cannot be accessed by anyone other than the user, and i will need to inform th end users about any data that is required.
 
 
 ---
 
 # User Experience (UX) Principles
 
-## NAME OF UX PRINCIPLE 1
+## Useful
 
-Replace this text with a clear explanation of what the principle means.
-
-### Relevance to the System
-
-Replace this text with an explanation of why the principle is relevant to this particular project.
-
-### Impact / Considerations
-
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
-
-
-## NAME OF UX PRINCIPLE 2
-
-Replace this text with a clear explanation of what the principle means.
+Products and systems should be genuinely useful and fulfill a real need for a group of end-users.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the principle is relevant to this particular project.
+This is relevant to my product as it is important that my project is useful for the users, meaning they will use it often
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
+Moving forward I need to ensure that my project fulfills all the needs of my end users, so they will use the site often, i will do this by constantly getting feedback from my end user, so they can confirm if it is useful to them.
 
 
-## NAME OF UX PRINCIPLE 3
+## Usable
 
-Replace this text with a clear explanation of what the principle means.
+It is essential that products and systems should be easy to use for the intended end-user.
+
+However good usability alone is not sufficient.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the principle is relevant to this particular project.
+This is relevant to my project as i am trying to apeal to one group of individuals, which is gym goers.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
+Moving forward I will need to constantly get feedback from my end-user, to ensure that the site will be designed and used as they want it to be
+
+
+## Findable
+
+Systems should be easily navigable, so end-users can find the content or functionality they need.
+
+### Relevance to the System
+
+This is important for my project as it will need to simple to navigate, as it will typically be used right after a workout
+
+### Impact / Considerations
+
+Moving forward I will need to ensure that every function of the site is clear and obvious, making it simple to use for anyone.
 
