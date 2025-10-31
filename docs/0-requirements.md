@@ -12,7 +12,7 @@ My project will have a variety of end users, so they will all have a variety of 
 
 ## Proposed Solution
 
-My solution to this problem will be to create a website avaliable to use on the end-users phone which will track all of their progress separately while they can all use the same exercises.
+My solution to this problem will be to create a website available to use on the end-users phone which will track all of their progress separately while they can all use the same exercises.
 
 
 ---
@@ -25,7 +25,7 @@ The functionality implications of a digital technology or digital outcome relate
 
 ### Relevance to the System
 
-Functionality is relevant to my project as it is vital that the sytems functions correctly to provide a positive user experience.
+Functionality is relevant to my project as it is vital that the systems functions correctly to provide a positive user experience.
 
 ### Impact / Considerations
 
@@ -40,11 +40,11 @@ The usability implications of a digital technology or digital outcome (e.g. a we
 
 ### Relevance to the System
 
-Usability is relevant to my project as it is important for the users to eb albe to complete any tasks in the site easily.
+Usability is relevant to my project as it is important for the users to eb able to complete any tasks in the site easily.
 
 ### Impact / Considerations
 
-Moving forward I will need to ensure my website follows the common usability heuristics and the users need to be able to complete tasks easily, to do this I will need to ensure I Follow standard cinventions, Make the behaviour of the system logical and familiar, provide the end-user with a clear route forwards and backwards, and always make it obvious to the end-user what is happening. If the site is difficul to use and itr is not clear what the end-user might need to do, they may become frustrated with teh site, and stop using it.
+Moving forward I will need to ensure my website follows the common usability heuristics and the users need to be able to complete tasks easily, to do this I will need to ensure I Follow standard conventions, Make the behaviour of the system logical and familiar, provide the end-user with a clear route forwards and backwards, and always make it obvious to the end-user what is happening. If the site is difficult to use and itr is not clear what the end-user might need to do, they may become frustrated with teh site, and stop using it.
 
 
 
@@ -60,7 +60,7 @@ The aesthetics of the site are very important as the site needs to appeal to the
 
 Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
 
-Moving forward I will need to ensure my design appeals to the end-users by contantky getting feedback from my end-user, I also need to ensure I follow conventions and that I correctly use colour, font and positioning.
+Moving forward I will need to ensure my design appeals to the end-users by constantly getting feedback from my end-user, I also need to ensure I follow conventions and that I correctly use colour, font and positioning.
 
 
 
@@ -70,11 +70,11 @@ The accessibility implications of a digital technology or digital outcome (e.g. 
 
 ### Relevance to the System
 
-Accessibility is relevant to my project as the possible end-users of my project can come many many difeerent backgrounds and be of various ages, meaning some will have more difficulty with technology than others.
+Accessibility is relevant to my project as the possible end-users of my project can come many many different backgrounds and be of various ages, meaning some will have more difficulty with technology than others.
 
 ### Impact / Considerations
 
-Moving forward I will need to constant get feedback from my end-user, ensuring the site is easy to maneovoure for all possible end-users, I will need to ensure I choose good colour combinatiosn whoch work well with the text and icons, make sure I provide appropriate structure to aid in the end-users understanding the content, and I will need to enure the site is accessible on a range of devices and browsers.
+Moving forward I will need to constant get feedback from my end-user, ensuring the site is easy to maneuver for all possible end-users, I will need to ensure I choose good colour combinations which work well with the text and icons, make sure I provide appropriate structure to aid in the end-users understanding the content, and I will need to enure the site is accessible on a range of devices and browsers.
 
 
 
@@ -88,7 +88,7 @@ The end-user implications are relevant to my project as I am aiming to appeal to
 
 ### Impact / Considerations
 
-Moving forward I will need to ensure that I meet all possible end-users specific needs, that my site appeals to gym goers, and that it works on the kind of devices they will be using. To do thsi I will need to get in contact with my end-user to learn as much about how I will need to design the website, using appropriate language and colours.
+Moving forward I will need to ensure that I meet all possible end-users specific needs, that my site appeals to gym goers, and that it works on the kind of devices they will be using. To do this I will need to get in contact with my end-user to learn as much about how I will need to design the website, using appropriate language and colours.
 
 
 ---
@@ -132,7 +132,7 @@ However good usability alone is not sufficient.
 
 ### Relevance to the System
 
-This is relevant to my project as i am trying to apeal to one group of individuals, which is gym goers.
+This is relevant to my project as i am trying to appeal to one group of individuals, which is gym goers.
 
 ### Impact / Considerations
 

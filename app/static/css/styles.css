@@ -83,12 +83,26 @@ nav ul {
     margin: 0;
 }
 
+nav a {
+    color:black
+}
+
 .logo {
     max-width: 6rem;
     max-height: 7rem;
 }
 
-/*-------------body----------------*/
+/*-----------------main---------------*/
+
+main {
+    background-color: black;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 body {
     display: flex;
@@ -141,18 +155,6 @@ a[role ="button"]:hover {
     margin: 0.2rem;
     color: yellow;
     text-decoration-color: yellow;
-}
-
-/*-----------------main---------------*/
-
-main {
-    background-color: black;
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .forms {
@@ -209,13 +211,12 @@ main {
 
 .exercises-table h2 {
     width: 100%;
-    max-width: 600px;
+    margin-top: 1rem;
     text-align: left;
 }
 
 .exercises-table li {
     width: 100%;
-    max-width: 600px;
     text-align: left;
     align-items: center;
 }
@@ -240,6 +241,34 @@ main {
     font-weight: bold;
     width: 6rem;
     z-index: 1000;  /* move button to front */
+}
+
+.workout-header {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.workout-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info-owner {
+    font-size: 0.9rem;
+    max-width: 10rem;
+    color: goldenrod;
+}
+
+.fav-button {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /*----------------Form--------------*/

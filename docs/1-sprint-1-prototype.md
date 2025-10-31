@@ -36,11 +36,11 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 ### Required Data Output
 
-- When the user signs in a small piece of text will be displayed on th ehome screen, welcoming the user using their name
+- When the user signs in a small piece of text will be displayed on the home screen, welcoming the user using their name
 
-- When a user adds their progress to an exercise a small piece of text on the screen will diplaying saying their progress has been added,  this will also update the table or graph shwoing the users progress, when deleting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.
+- When a user adds their progress to an exercise a small piece of text on the screen will displaying saying their progress has been added,  this will also update the table or graph showing the users progress, when deleting progress the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the progress will be gone.
 
-- When the user adds an exercise a small piece of text will show up saying it was successful, when delting an exercise the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the exercise will be gone
+- When the user adds an exercise a small piece of text will show up saying it was successful, when deleting an exercise the user will be asked if they are sure when they press the button, then if they press ok a small piece of text will showup saying the delete was successful and the exercise will be gone
 
 - When an exercise os favourited, the exercise will be moved up wit the other favouited exercises on the home page, and inside the exercises page their will be some symbol/button to show that it is favourited.
 
@@ -53,17 +53,17 @@ Develop a prototype that simulates the key functionality of the system, then tes
 Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
 - When a user registers an account in the system, their name, username and password are sent to the server where the password is hashed and stored to protect user privacy
 
-- When logging in the system checks the inputed username and password with the ones in the database, if it matches with a registered user it creates a session for the user, allowing personalised data to load
+- When logging in the system checks the input username and password with the ones in the database, if it matches with a registered user it creates a session for the user, allowing personalised data to load
 
 - When a user adds a workout the system links their user id and the exercise's id to the workouts table and ensures all of the correct data will be input
 
 - When deleting a workout the system will compare the users id to the user id of the workout being deleted, to ensure that it is being deleted by the owner
 
-- When a user adds a new exercise the system will store all of the info of the exercise like name and descreiption, while linking the users id to the table.
+- When a user adds a new exercise the system will store all of the info of the exercise like name and description, while linking the users id to the table.
 
 - The exercises will be sorted into 3 categories favourites, owned and others, depending on their state
 
-- When a user clicks the favuoite button the system will check if the exercise is already favouited then will either favourite or unfavourite depending if it is or isnt favourited
+- When a user clicks the favourite button the system will check if the exercise is already favouited then will either favourite or unfavourite depending if it is or isnt favourited
 
 
 ---
@@ -78,8 +78,8 @@ This Figma demo shows the initial design for the UI 'flow':
 
 ### Testing
 
-I took my user through the UI and explained how it will work and where evrytimg will be
-They said "Yeah thats perfect, just add like a login and register page well"
+I took my user through the UI and explained how it will work and where everything will be
+They said "Yeah thats perfect, just add like a login and register page as well"
 
 ### Changes / Improvements
 
@@ -114,7 +114,7 @@ My end user said " yeah it looks fine but i reckon you need a way to tell which 
 - List of Favourites, Owned and Other exercises, with a small symbol and key showiing which favourites are owned
 - Added delete button for exercises which are owned by the user.
 - A new home symbol in the top replaces the back button in certain pages, also include the home button in the forms 
-- Centred the text in the header and added a logout buttin, as well as a login button in the header on the landing page.
+- Centred the text in the header and added a logout button, as well as a login button in the header on the landing page.
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/qfNz3wUZ3utSq7v1vSiOK5/Workout-Tracker-High-Quality--3-?node-id=2-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
 
@@ -132,11 +132,11 @@ This Figma demo shows the UI with refinements applied:
 ### Testing
 
 I took my end user through the UI, using all of the features so they could have an understanding of it and see if it flows well.
-My end user said "Yeah it looks pretty good and flows well, but the colour is not very good, I feel like it should have darker and more aggresive colours, like black and red, you also need to add a way to favourite it in the page"
+My end user said "Yeah it looks pretty good and flows well, but the colour is not very good, I feel like it should have darker and more aggressive colours, like black and red, you also need to add a way to favourite it in the page"
 
 ### Changes / Improvements
 
-- Changed to more aggresive colours, using a general base of black and red, with buttons being orange
+- Changed to more aggressive colours, using a general base of black and red, with buttons being orange
 
 - Added a star symbol in the exercises page, where it can be clicked to favourite the exercise, filling in the star
 

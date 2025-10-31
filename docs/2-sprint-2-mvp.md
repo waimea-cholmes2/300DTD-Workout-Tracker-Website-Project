@@ -40,7 +40,7 @@ I'm getting the exercise Table to show favourites, owned and others separately, 
 
 ### Changes / Improvements
 
-The problem was I wasnt pulling the exercises user id to compare with the sessions user id, so i fixed that
+The problem was I wasn't pulling the exercises user id to compare with the sessions user id, so i fixed that
 
 ![Exercise showing owned symbol](screenshots/exercise_own_showing.png)
 
@@ -82,13 +82,13 @@ I showed it to my end-user to see what they thought and they reminded me I neede
 
 ## Deleting Workouts
 
-I made the route for deleting workouts, and then tried to use it, the item was being delted from the table, but the return redirect waasnt working.
+I made the route for deleting workouts, and then tried to use it, the item was being delted from the table, but the return redirect wasn't working.
 
 ![Deleting Workout Fail](screenshots/delete_workouts_fail.png)
 
 ### Changes / Improvements
 
-The problem was that i wasnt passing through the exercise id into the route, so it couldnt look for the exercise. Instead of passing it through i used request referrer to go back to the previous page
+The problem was that i wasn't passing through the exercise id into the route, so it couldn't look for the exercise. Instead of passing it through i used request referrer to go back to the previous page
 
 ![Deleting Workout](screenshots/delete_workout.png)
 
@@ -103,7 +103,7 @@ When adding the exercise the user would need to scroll down somewhat far dependi
 
 ### Changes / Improvements
 
-To fix this i spoke to my end-user to see what they wanted me to do, and they said to make the add exercise form be on an entirly separate page, that the users can get to by clicking the add exercise button.
+To fix this i spoke to my end-user to see what they wanted me to do, and they said to make the add exercise form be on an entirely separate page, that the users can get to by clicking the add exercise button.
 
 ![Exercise form on new page](screenshots/exercise_form_page.png)
 
@@ -125,39 +125,9 @@ Replace this text with notes any improvements you made as a result of the testin
 
 ---
 
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
 ## Sprint Review
 
-This sprint has helped to move the project forward by providing a solid and function base for the system, the main goals of the sprint have been met, as the syetm is now readsy to be refined into the final product in sprint 3.
+This sprint has helped to move the project forward by providing a solid and function base for the system, the main goals of the sprint have been met, as the system is now ready to be refined into the final product in sprint 3.
 
 Key success points:
  - The MVP has been finished and tested, meaning it is now ready to be made into  the final product
@@ -167,6 +137,6 @@ Key success points:
  - Many bugs were able to be fixed especially errors in the routes
 
  Challenges:
- - Small issues with route methods at one point, whioch took a while to realise the error
+ - Small issues with route methods at one point, which took a while to realise the error
  - delete redirect not working due to missing parameters also took a while to find a solution
 

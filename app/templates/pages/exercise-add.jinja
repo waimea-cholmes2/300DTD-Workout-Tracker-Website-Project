@@ -14,22 +14,22 @@
 
 
 {% block content %}
+    <div class="forms">
+        <article>
 
-    <article>
+            <h3>Add a New Exercise</h3>
 
-    <h3>Add a New Exercise</h3>
+            <form action="/add-exercise" method="POST">
 
-    <form action="/add-exercise" method="POST">
+                <input type="text" name="name" placeholder="Name of New Exercise" required>
 
-        <input type="text" name="name" placeholder="Name of New Exercise" required>
+                <input type="text" name="description" placeholder="Exercise Description" required>
 
-        <input type="text" name="description" placeholder="Exercise Description" required>
+                <button class="add-button">Add</button>
 
-        <button class="add-button">Add</button>
+            </form>
 
-    </form>
-
-</article>
-
+        </article>
+    </div>
 {% endblock %}
 

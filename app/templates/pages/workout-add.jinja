@@ -14,48 +14,47 @@
 
 
 {% block content %}
+    <div class="forms">
+        <article>
 
-    <article>
+            <header>
+                <h2>Add a Workout</h2>
+            </header>
 
-        <header>
-            <h2>Add a Workout</h2>
-        </header>
+            <form action="/add-workout/{{ exercise_id }}" method="POST">
 
-        <form action="/add-workout/{{ exercise_id }}" method="POST">
+                <input
+                    type="number"
+                    name="sets"
+                    placeholder="Sets"
+                    required
+                >
 
-            <input
-                type="number"
-                name="sets"
-                placeholder="Sets"
-                required
-            >
+                <input
+                    type="number"
+                    name="reps"
+                    placeholder="Reps"
+                    required
+                >
 
-            <input
-                type="number"
-                name="reps"
-                placeholder="Reps"
-                required
-            >
+                <input
+                    type="date"
+                    name="date"
+                    required
+                >
 
-            <input
-                type="date"
-                name="date"
-                placeholder="Date"
-                required
-            >
+                <input
+                    type="number"
+                    name="weight"
+                    placeholder="Weight(Kg)"
+                    required
+                >
 
-            <input
-                type="number"
-                name="weight"
-                placeholder="Weight(Kg)"
-                required
-            >
+                <button class="add-button">Add Workout</button>
 
-            <button class="add-button">Add Workout</button>
+            </form>
 
-        </form>
-
-    </article>
-
+        </article>
+    </div>
 {% endblock %}
 
