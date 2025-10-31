@@ -119,7 +119,7 @@ Use complex techniques to develop a database means that, taking into account the
    - [x] Identify the **implications most relevant** to your project
    - [x] Explain **what the implications mean** and **why each is relevant** to your project
    - [x] Explain **how each implication will impact your specific project** (considerations / choices / designs)
-   - [ ] At the end of your project, you need to **explain what you did in your project to address each implication**
+   - [x] At the end of your project, you need to **explain what you did in your project to address each implication**
 
 *Note: You must satisfy **all** of the criteria above to pass*
 
@@ -200,7 +200,7 @@ Use complex techniques to develop a digital media outcome means that, taking int
    - [x] Identify the **implications most relevant** to your project
    - [x] Explain **what the implications mean** and **why each is relevant** to your project
    - [x] Explain **how each implication will impact your specific project** (considerations / choices / designs)
-   - [ ] At the end of your project, you need to **explain what you did in your project to address each implication**
+   - [x] At the end of your project, you need to **explain what you did in your project to address each implication**
 
 
 *Note: You must satisfy **all** of the criteria above to pass*
@@ -215,8 +215,8 @@ Use complex techniques to develop an informed digital media outcome means **all 
    - [x] Show the **improvements made** as a result
 
 2. You have used testing tools to help improve your web site:
-   - [ ] You have used **code validation** tools for generated HTML and CSS
-   - [ ] You have **fixed any issues** identified
+   - [X] You have used **code validation** tools for generated HTML and CSS
+   - [X] You have **fixed any issues** identified
 
 3. You have applied user experience (UX) principles to improve the quality of your web site:
    - [x] Show evidence that you **tested your system against identified UX principles** during development
@@ -236,7 +236,7 @@ Use complex techniques to develop a refined digital media outcome means **all of
    - [x] You git **commits are regular with descriptive commit messages**
    - [x] You have **effectively used tools** like DrawSQL, Figma, VS Code, Turso SQL editor, etc. to help develop the outcome
    - [x] You have made good use of **templates** (Jinja) to organise and structure content
-   - [ ] Your code is **commented** as needed
+   - [x] Your code is **commented** as needed
    - [x] You have **optimised media assets** (e.g. image sizing)
 
 

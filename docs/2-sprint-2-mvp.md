@@ -107,22 +107,6 @@ To fix this i spoke to my end-user to see what they wanted me to do, and they sa
 
 ![Exercise form on new page](screenshots/exercise_form_page.png)
 
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
 ---
 
 ## Sprint Review

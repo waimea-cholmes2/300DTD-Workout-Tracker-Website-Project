@@ -1,13 +1,13 @@
 {#=====================================================
-  Base template
-  - Used as the basis of all pages
-  - Uses a dark colour theme by default
-  - Provides a main heading and navigation menu
-  - Has blocks for the page title and main content
-  - Loads PicoCSS and Pico Colours
-  - Loads a user stylesheet
-  - Loads JS utility functions
-  - Includes block for flash messages
+Base template
+- Used as the basis of all pages
+- Uses a dark colour theme by default
+- Provides a main heading and navigation menu
+- Has blocks for the page title and main content
+- Loads PicoCSS and Pico Colours
+- Loads a user stylesheet
+- Loads JS utility functions
+- Includes block for flash messages
 =====================================================#}
 
 <!DOCTYPE html>
@@ -15,44 +15,44 @@
 <html lang="en" data-theme="dark">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="/static/images/dumbell.png">
 
-	<title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
     <script src="/static/js/utils.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.slate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.slate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
 <body>
 
-        <nav>
-            <ul>
-                <li><img class="logo" src="/static/images/logo.png" alt="Logo"></li>
-            </ul>
+    <nav>
+        <ul>
+            <li><img class="logo" src="/static/images/logo.png" alt="Logo"></li>
+        </ul>
 
-            <ul>
+        <ul>
 
-                {% if session.user_id %}<li><a href="/">Exercises</a></li>{% endif %}
+            {% if session.user_id %}<li><a href="/">Exercises</a></li>{% endif %}
 
-                {% if session.user_id %}
+            {% if session.user_id %}
 
-                    <li><a href="/logout">Logout</a></li>
+            <li><a href="/logout">Logout</a></li>
 
-                {% else %}
+            {% else %}
 
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
 
-                {% endif %}
+            {% endif %}
 
-            </ul>
-        </nav>
+        </ul>
+    </nav>
 
 
     {# Show flash messages from any previous events #}
@@ -73,8 +73,7 @@
     <div class="footer">
         <p>©2025 Cooper Holmes</p>
     </div>
-    
+
 </body>
 
 </html>
-

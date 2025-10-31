@@ -89,6 +89,20 @@ After speaking to my End-User I confirmed they wanted the owned on top, so to fi
 
 ---
 
+## Scrolling Workouts Table
+
+When the size of the screen becomes too small, the workouts table will go off into the side of the screen.
+
+![No Scroll Workouts Table](screenshots/workouts-table-no-scroll.png)
+
+### Changes / Improvements
+
+I allowed the table to scroll when the screen becomes small enough
+
+![Workouts Table Scrolling](screenshots/scrolling-workouts.gif)
+
+---
+
 ## Html Validation
 
 Home Page:

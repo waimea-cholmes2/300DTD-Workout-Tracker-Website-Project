@@ -58,8 +58,6 @@ The aesthetics of the site are very important as the site needs to appeal to the
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
 Moving forward I will need to ensure my design appeals to the end-users by constantly getting feedback from my end-user, I also need to ensure I follow conventions and that I correctly use colour, font and positioning.
 
 
@@ -103,8 +101,7 @@ The privacy implications are important for my project as it will be storing end 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-Moving forward I will need to ensure that i only collect needed data, and that that data will only only be stored if the system will need to use it, I will also need to ensure that stored data cannot be accessed by anyone other than the user, and i will need to inform th end users about any data that is required.
+Moving forward I will need to ensure that i only collect needed data, and that that data will only only be stored if the system will need to use it, I will also need to ensure that stored data cannot be accessed by anyone other than the user, and i will need to inform the end users about any data that is required.
 
 
 ---

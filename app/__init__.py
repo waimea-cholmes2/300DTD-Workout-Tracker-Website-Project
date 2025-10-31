@@ -120,7 +120,7 @@ def delete_an_exercise(id):
         params = [id, user_id]
         result = client.execute(sql, params)
         
-        # Check if the exercise was deleted before deleting favouites
+        # Check if the exercise was deleted before deleting favourites and workouts
         sql = "SELECT 1 FROM exercises WHERE id=?"
         params = [id]
         result = client.execute(sql, params)
@@ -132,6 +132,10 @@ def delete_an_exercise(id):
             
         else: 
             sql = "DELETE FROM favourites WHERE exercise_id=?"
+            params = [id]
+            client.execute(sql, params)
+
+            sql = "DELETE FROM workouts WHERE exercise_id=?"
             params = [id]
             client.execute(sql, params)
 
