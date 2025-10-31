@@ -64,8 +64,6 @@ The project demonstrates a number of **complex digital media (web) techniques**:
 - Using dynamic data handling and interactivity
 - Automation through scripts
 
-** EDIT THESE LISTS ABOVE TO MATCH YOUR PROJECT**
-
 Info for example/display accounts:
 1:
 name: Scott
